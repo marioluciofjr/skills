@@ -23,6 +23,7 @@ Este repositório reúne variadas skills para serem utilizadas em sistemas agên
 Cada pasta é uma skill diferente. Para baixar os arquivos .ZIP de maneira separada, só acessar os links abaixo:
 * [prompt-personagem](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/prompt-personagem)
 * [alt-text](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/alt-text)
+* [prompt-estruturado](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/prompt-estruturado)
 
 ## Tecnologias utilizadas
 
