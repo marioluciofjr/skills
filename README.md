@@ -25,6 +25,7 @@ Cada pasta é uma skill diferente. Para baixar os arquivos .ZIP de maneira separ
 * [alt-text](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/alt-text)
 * [prompt-estruturado](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/prompt-estruturado)
 * [analise-semiotica](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/analise-semiotica)
+* [prompt-skills](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/prompt-skills)
 
 ## Tecnologias utilizadas
 
