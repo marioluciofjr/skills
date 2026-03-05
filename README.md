@@ -2,7 +2,7 @@
 Repositório com minhas skills para Claude, Antigravity, Agno, ADK e demais sistemas agênticos
 
 [![Made with Python](https://img.shields.io/badge/Python->=3.10-blue?logo=python&logoColor=white)](https://python.org "Go to Python homepage")
-![license - MIT](https://img.shields.io/badge/license-MIT-green)
+![license - Apache 2.0](https://img.shields.io/badge/license-Apache2.0-green)
 ![site - prazocerto.me](https://img.shields.io/badge/site-prazocerto.me-230023)
 ![linkedin - @marioluciofjr](https://img.shields.io/badge/linkedin-marioluciofjr-blue)
 
