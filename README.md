@@ -10,6 +10,7 @@ Repositório com minhas skills para Claude, Antigravity, Agno, ADK e demais sist
 
 * [Introdução](#introdução)
 * [Estrutura do projeto](#estrutura-do-projeto)
+* [Como adicionar uma skill deste repositório no Claude](#como-adicionar-uma-skill-deste-repositório-no-claude)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Links úteis](#links-úteis)
 * [Contribuições](#contribuições)
@@ -27,6 +28,21 @@ Cada pasta é uma skill diferente. Para baixar os arquivos .ZIP de maneira separ
 * [analise-semiotica](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/analise-semiotica)
 * [prompt-skills](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/prompt-skills)
 * [calculadora-cdi](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/calculadora-cdi)
+* [bbb-estatisticas](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/bbb-estatisticas)
+
+## Como adicionar uma skill deste repositório no Claude
+
+O passo a passo é bem simples: 
+
+1. Em [Estrutura do projeto](#estrutura-do-projeto), clique no link da skill que deseja baixar a pasta .ZIP
+2. Entre no [Claude](https://claude.ai/new)
+3. Acesse o ícone 'Personalizar' ![Image](https://github.com/user-attachments/assets/0939a2d2-28f0-49f7-b527-00c0f7fc5fc4)
+4. Clique em 'Habilidades' ![Image](https://github.com/user-attachments/assets/f5a31a26-34f8-43cd-b19d-5c8443d810ac) ou 'Criar novas habilidades' ![Image](https://github.com/user-attachments/assets/524bda5b-3477-4ebb-863a-211f8e7e1e9b)
+5. Clique no ícone de adicionar nova habilidade ![Image](https://github.com/user-attachments/assets/3d9b6977-7229-45f9-8f7d-443a19c173bf)
+6. Escolha a opção 'Fazer upload de uma nova habilidade'
+7. Faça o upload da pasta .ZIP que acabou de baixar deste repositório
+
+Se tiver dúvidas, só acessar os [Links úteis](#links-úteis)
 
 ## Tecnologias utilizadas
 
