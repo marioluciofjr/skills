@@ -50,11 +50,13 @@ Se tiver dúvidas, só acessar os [Links úteis](#links-úteis)
   <img align="center" height="60" width="80" src="https://camo.githubusercontent.com/a5c02c148c39e94df1be062d9ba35c3e2154aede22f8e95476492059ed5b3a1b/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e406c61746573742f69636f6e732f707974686f6e2f707974686f6e2d6f726967696e616c2d776f72646d61726b2e737667" />&nbsp;&nbsp;&nbsp
   <img align="center" height="60" width="80" src="https://camo.githubusercontent.com/0d1832aec3509ce9c986e93f33c112c2da495e818f579e1dc1f03da116e5d9c4/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e406c61746573742f69636f6e732f79616d6c2f79616d6c2d6f726967696e616c2e737667" />&nbsp;&nbsp;&nbsp
   <img align="center" height="60" width="80" src="https://camo.githubusercontent.com/ecba9820693ce92df70da152652c07adedcc44b5ee7dbc02ff863c6b546ec469/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e406c61746573742f69636f6e732f6d61726b646f776e2f6d61726b646f776e2d6f726967696e616c2e737667" />&nbsp;&nbsp;&nbsp
+  <img align="center" height="60" width="80" src="https://github.com/lobehub/lobe-icons/raw/master/packages/static-svg/icons/antigravity-color.svg" />&nbsp;&nbsp;&nbsp
  </div><br>
 
 * Python
 * Yaml
 * Markdown
+* Antigravity
 
 ## Links úteis
 
