@@ -1,0 +1,5 @@
+# Resumo Big Brother Brasil 10
+
+Big Brother Brasil 10[a]foi a décima temporada doreality showbrasileiroBig Brother Brasil, exibida pelaTV Globoentre 12 de janeiro e 30 de março de 2010, com 78 dias de confinamento. O programa foi apresentado porPedro Biale dirigido porJosé Bonifácio Brasil de Oliveira, o Boninho. Essa foi a primeira temporada a ter ex-participantes de edições passadas voltando a competir. Na final do programa, foi constatada a maior votação do programa e dereality showsno mundo até então, com mais de 154 milhões de votos. O recorde foi nove anos depois superado na nona eliminação doBig Brother Brasil 19.[1][2] A edição terminou com a vitória do lutador e professor de educação físicaMarcelo Dourado, que também havia participado doBig Brother Brasil 4, com 60% dos votos. O prêmio foi de R$ 1,5 milhão de reais, sem desconto de impostos, e um carroFiat Palio. No entanto, aTV Globodistribuiu mais de dez milhões em prêmios.[3]
+
+Fonte: https://pt.wikipedia.org/wiki/Big_Brother_Brasil_10

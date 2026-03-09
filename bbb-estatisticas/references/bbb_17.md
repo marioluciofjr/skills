@@ -1,0 +1,5 @@
+# Resumo Big Brother Brasil 17
+
+Big Brother Brasil 17[a]foi a décima sétima temporada doreality showbrasileiroBig Brother Brasil, que foi exibida pelaTV Globoentre 23 de janeiro e 13 de abril de 2017, com 81 dias de confinamento, estreando pela segunda vez na história do programa em uma segunda-feira e também pela segunda vez terminando numa quinta-feira.[1][2]A temporada foi apresentada porTiago Leifert(substituindoPedro Bial, que deixou o programa após 16 edições) e teve direção geral de Rodrigo Dourado. Esta foi a quinta edição a ser exibida em HD. Também foi a terceira edição em que foi possível acompanhar em múltiplas plataformas através doBBB Playe doGloboplay. A edição terminou com a vitória da estudante Emilly Araújo, que recebeu 58% dos votos, e faturou o prêmio máximo de R$ 1,5 milhão sem desconto de impostos.[3]Foi a terceira vez que oBig Brother Brasilteve apenas mulheres na final, após oBig Brother Brasil 14e oBig Brother Brasil 16.
+
+Fonte: https://pt.wikipedia.org/wiki/Big_Brother_Brasil_17

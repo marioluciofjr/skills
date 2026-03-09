@@ -1,0 +1,5 @@
+# Resumo Big Brother Brasil 1
+
+Aprimeira temporada[a]doreality showBig Brother Brasilfoi exibida pelaTV Globode29 de janeiroa2 de abrilde 2002. Foi apresentada porPedro BialeMarisa Orth– a única edição com Orth como apresentadora e também a ter uma apresentadora feminina – com direção geral de José Bonifácio Brasil de Oliveira, oBoninho, e Carlos Magalhães. Foi a mais curta edição da história doBBB, com 64 dias de exibição.[1] A edição terminou com a vitória do dançarinoKleber Bambam, que recebeu 68% dos votos. O prêmio foi de meio milhão de reais sem desconto de impostos, e um carroFiat Marea HLX.[2] A edição foi reexibida peloVivade 11 de maio a 13 de julho de 2021, com exibições de segunda a sábado às 19h30 e aos domingos às 23h45, se tornando o segundoreality showa ser exibido pelo canal, após a reprise da primeira temporada deNo Limiteem 2016.[3]Além da reprise no Viva, a edição também foi disponibilizada na plataforma destreamingGloboplay.[4]
+
+Fonte: https://pt.wikipedia.org/wiki/Big_Brother_Brasil_1

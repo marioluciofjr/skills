@@ -1,0 +1,5 @@
+# Resumo Big Brother Brasil 22
+
+Big Brother Brasil 22[a]foi a vigésima segunda temporada doreality showbrasileiroBig Brother Brasil, exibida pelaTV Globoentre 17 de janeiro e 26 de abril de 2022.[1]A edição foi a primeira com a apresentação deTadeu Schmidt(substituindoTiago Leifert, que deixou o programa após cinco edições).[2]A direção artística foi de Rodrigo Dourado. Essa temporada teve 100 dias de confinamento, empatada com a21ªcomo as edições mais longas já exibidas doreality show. Foi a terceira edição consecutiva a ter uma mescla de confinados anônimos efamososcomo participantes do programa. A edição terminou com a vitória do ator e cantorArthur Aguiar, que recebeu 68,96% dos votos e faturou o prêmio máximo de R$ 1,5 milhão sem desconto de impostos, e um carroFiat Pulse Abarth. Arthur é o primeiro participante do grupo Camarote a vencer desde a introdução da dinâmica noBig Brother Brasil 20.[3]Até o momento, esta é a única edição a ter apenas homens na final e um camorote campeão desde a introdução da dinâmica em 2020.[4]
+
+Fonte: https://pt.wikipedia.org/wiki/Big_Brother_Brasil_22

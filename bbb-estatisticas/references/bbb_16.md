@@ -1,0 +1,5 @@
+# Resumo Big Brother Brasil 16
+
+Big Brother Brasil 16[a]foi a décima sexta temporada doreality showbrasileiroBig Brother Brasil, exibida pelaTV Globoentre 19 de janeiro a 5 de abril de 2016, com 78 dias de confinamento. A edição foi a última com a apresentação dePedro Bial(que em 2017 foi substituído porTiago Leifert), e teve direção geral de Rodrigo Dourado. Esta foi a quarta edição a ser exibida em HD. Também a segunda edição em que foi possível acompanhar em múltiplas plataformas através doBBB Playe doGloboplaye a segunda edição a estrear na segunda quinzena de janeiro. A edição terminou com a vitória da estudante Munik Nunes, que recebeu a unanimidade dos pontos navotação por regiões(média de 61,59% dos votos), e faturou o prêmio máximo de R$ 1,5 milhão sem desconto de impostos, tornando-se a vencedora mais jovem da história do programa, aos 19 anos. Foi a segunda vez que oBig Brother Brasilteve apenas mulheres na final, após oBig Brother Brasil 14.
+
+Fonte: https://pt.wikipedia.org/wiki/Big_Brother_Brasil_16

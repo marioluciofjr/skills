@@ -1,0 +1,5 @@
+# Resumo Big Brother Brasil 23
+
+Big Brother Brasil 23[a]foi a vigésima terceira temporada doreality showbrasileiroBig Brother Brasil, exibida pelaTV Globoentre 16 de janeiro e 25 de abril de 2023. Esta edição teve apresentação do jornalistaTadeu Schmidt. A direção artística foi de Rodrigo Dourado.[2] Essa temporada teve 100 dias de confinamento, empatada com a21ªe a22ªcomo as edições mais longas já exibidas doreality show.[3]Foi a quarta edição consecutiva a apresentar uma mescla de confinados anônimos efamososcomo participantes do programa.[4] A edição terminou com a vitória da médica Amanda Meirelles, que recebeu 68,90% dos votos, faturando o prêmio máximo de R$ 2,88 milhões sem desconto de impostos, e um carroChevrolet Silverado.[5]Foi a quinta vez que oBig Brother Brasilteve apenas mulheres na final. Esta edição até então tinha a pior audiência da história do programa, terminando com média geral de 18,8 pontos, superando oBig Brother Brasil 19(esta anteriormente detivera o recorde), até ser batida peloBig Brother Brasil 25(que teve 16,1 pontos de média geral).[6][7]
+
+Fonte: https://pt.wikipedia.org/wiki/Big_Brother_Brasil_23
