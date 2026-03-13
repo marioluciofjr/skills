@@ -1,5 +1,5 @@
 # skills
-Repositório com minhas skills para Claude, Claude Code, Antigravity, Agno, ADK, OpenClaw, Windsurf, Qwen Code e demais sistemas agênticos
+Repositório com minhas skills para Claude, Claude Code, Antigravity, Agno, ADK, OpenClaw, Windsurf, Qwen Code e demais sistemas agênticos.
 
 [![Made with Python](https://img.shields.io/badge/Python->=3.10-blue?logo=python&logoColor=white)](https://python.org "Go to Python homepage")
 ![license - Apache 2.0](https://img.shields.io/badge/license-Apache2.0-green)
