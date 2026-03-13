@@ -11,6 +11,7 @@ Repositório com minhas skills para Claude, Antigravity, Agno, ADK e demais sist
 * [Introdução](#introdução)
 * [Estrutura do projeto](#estrutura-do-projeto)
 * [Como adicionar uma skill deste repositório no Claude](#como-adicionar-uma-skill-deste-repositório-no-claude)
+* [Como adicionar uma skill deste repositório no Antigravity](#como-adicionar-uma-skill-deste-repositório-no-antigravity)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Links úteis](#links-úteis)
 * [Contribuições](#contribuições)
@@ -44,6 +45,51 @@ O passo a passo é bem simples:
 
 Se tiver dúvidas, só acessar os [Links úteis](#links-úteis)
 
+## Como adicionar uma skill deste repositório no Antigravity
+<img width="348" height="170" alt="Image" src="https://github.com/user-attachments/assets/145da45d-dc81-47e6-8a38-d2ad5a0519d0" /><br><br>
+
+### Modo Manual
+1. No seu Antigravity, use o caminho File > Open Folder e ache o diretório `C:\Users\seu_usuario\.gemini\antigravity`
+2. No terminal do Antigravity você usa este comando e dá ENTER:
+   ```powershell
+   npx skills add marioluciofjr/skills
+   ```
+3. Ao aparecer a tela do Skills CLI, em `Select skills to install`, navegue com as teclas seta para baixo ou seta para cima e escolhe uma ou mais opções apertando ESPAÇO.
+4. Assim que escolher, aperte a tecla ENTER
+5. Em `Additional agents`, procure por 'Antigravity' (pode aparecer como primeira opção inclusive), basta clicar em ENTER
+6. Em `Installation scope`, escolha a opção 'Project' e dê ENTER
+7. Em Installation method`, escolha 'Symlink' e dê ENTER
+8. Em `Proceed with installation?, confirme com 'Yes' e dê ENTER
+9. Ao ver essa linha no CLI significa que deu certo `◇  Installation complete`
+
+> [!NOTE]
+> Pode ser que apareça um comando `Install the find-skills skill? It helps your agent discover and 
+suggest skills.`. É algo opcional, mas você pode escolher Yes e dar ENTER. É uma skill para achar outras skills.
+
+### Modo via Agent Antigravity
+
+Você pode também delegar para o Antigravity instalar para você. Basta só colocar no prompt do Agent e dar ENTER:
+
+```text
+## contexto
+comando = npx skills add marioluciofjr/skills
+diretório = .gemini\antigravity
+skill = COLOQUE AQUI O NOME DA SKILL
+
+## tarefa
+Pense passo a passo para executar a tarefa:
+1 - Busque o diretório
+2 - Use o comando e dê ENTER
+3 - Seta para baixo até chegar na skill, clique em ESPAÇO e dê ENTER
+4 - Em `Additional agents`, procure por 'Antigravity' (pode aparecer como primeira opção inclusive), basta clicar em ENTER
+5 - Em `Installation scope`, escolha a opção 'Project' e dê ENTER
+6 - Em Installation method`, escolha 'Symlink' e dê ENTER
+7 - Em `Proceed with installation?, confirme com 'Yes' e dê ENTER
+8 - Ao ver essa linha no CLI significa que deu certo `◇  Installation complete` e ode finalizar a tarefa
+```
+
+Se tiver dúvidas, só acessar os [Links úteis](#links-úteis)
+
 ## Tecnologias utilizadas
 
 <div>
@@ -72,6 +118,7 @@ Se tiver dúvidas, só acessar os [Links úteis](#links-úteis)
 * [Conjunto de ícones de modelos de IA/LLM](https://lobehub.com/pt-BR/icons) - site muito bom para conseguir ícones do ecossistema de IA
 * [Devicon](https://devicon.dev/) - site bem completo também com ícones gerais sobre tecnologia
 * [DownGit](https://downgit.github.io/#/home) - Gera downloads automáticos de pastas zip a partir de arquivos específicos em repositórios do GitHub
+* [Skills.sh](https://skills.sh) - Biblioteca completa da Vercel com várias skills disponíveis gratuitamente.
 
 
 ## Contribuições
