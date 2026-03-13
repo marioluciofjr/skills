@@ -73,19 +73,19 @@ Você pode também delegar para o Antigravity instalar para você. Basta só col
 
 ```text
 ## contexto
-comando = npx skills add marioluciofjr/skills
-diretório = .gemini\antigravity
-skill = COLOQUE AQUI O NOME DA SKILL
+COMANDO = npx skills add marioluciofjr/skills
+DIRETÓRIO = .gemini\antigravity
+SKILL = COLOQUE AQUI O NOME DA SKILL
 
 ## tarefa
 Pense passo a passo para executar a tarefa:
-1 - Busque o diretório
-2 - Use o comando e dê ENTER
-3 - Seta para baixo até chegar na skill, clique em ESPAÇO e dê ENTER
-4 - Em `Additional agents`, procure por 'Antigravity' (pode aparecer como primeira opção inclusive), basta clicar em ENTER
-5 - Em `Installation scope`, escolha a opção 'Project' e dê ENTER
-6 - Em Installation method`, escolha 'Symlink' e dê ENTER
-7 - Em `Proceed with installation?, confirme com 'Yes' e dê ENTER
+1 - Busque o DIRETÓRIO
+2 - Use o COMANDO e dê enter
+3 - Seta para baixo até chegar na SKILL, clique em espaço e dê enter
+4 - Em `Additional agents`, procure por 'Antigravity' (pode aparecer como primeira opção inclusive), basta clicar em enter
+5 - Em `Installation scope`, escolha a opção 'Project' e dê enter
+6 - Em Installation method`, escolha 'Symlink' e dê enter
+7 - Em `Proceed with installation?, confirme com 'Yes' e dê enter
 8 - Ao ver essa linha no CLI significa que deu certo `◇  Installation complete` e ode finalizar a tarefa
 ```
 
