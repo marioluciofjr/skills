@@ -30,6 +30,7 @@ Cada pasta é uma skill diferente. Para baixar os arquivos .ZIP de maneira separ
 * [prompt-skills](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/prompt-skills)
 * [calculadora-cdi](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/calculadora-cdi)
 * [bbb-estatisticas](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/bbb-estatisticas)
+* [diagrama-mermaid](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/diagrama-mermaid)
 
 ## Como adicionar uma skill deste repositório no Claude
 
@@ -106,19 +107,20 @@ Se tiver dúvidas, só acessar os [Links úteis](#links-úteis)
 
 ## Links úteis
 
-* [Como criar Skills personalizadas](https://support.claude.com/pt/articles/12512198-como-criar-skills-personalizadas) - Documentação prática da Anthropic sobre Skills
-* [Skills - Anthropic](https://github.com/anthropics/skills/tree/main) - Repositório oficial da Anthropic sobre Skills
-* [What are skills?](https://agentskills.io/what-are-skills) - Explicação detalhada sobre agent skills
-* [Agent Skills](https://antigravity.google/docs/skills) - Documentação do Google Antigravity sobre Agent Skills
-* [Usando Skills no Claude](https://support.claude.com/pt/articles/12512180-usando-skills-no-claude) - Documentação da Anthropic sobre como usar skills no Claude
-* [Como instalar o VSCode](https://code.visualstudio.com/download)- Link direto para download
-* [Como baixar o Antigravity](https://antigravity.google/download) - Página oficial de download da IDE do Google DeepMind
-* [Documentação oficial do pacote uv](https://docs.astral.sh/uv/) - Você saberá todos os detalhes sobre o `uv` e como ele é importante no Python
-* [venv — Criação de ambientes virtuais](https://docs.python.org/pt-br/3/library/venv.html) - Explicação completa de como funcionam os venvs
-* [Conjunto de ícones de modelos de IA/LLM](https://lobehub.com/pt-BR/icons) - site muito bom para conseguir ícones do ecossistema de IA
-* [Devicon](https://devicon.dev/) - site bem completo também com ícones gerais sobre tecnologia
-* [DownGit](https://downgit.github.io/#/home) - Gera downloads automáticos de pastas zip a partir de arquivos específicos em repositórios do GitHub
+* [Como criar Skills personalizadas](https://support.claude.com/pt/articles/12512198-como-criar-skills-personalizadas) - Documentação prática da Anthropic sobre Skills.
+* [Skills - Anthropic](https://github.com/anthropics/skills/tree/main) - Repositório oficial da Anthropic sobre Skills.
+* [What are skills?](https://agentskills.io/what-are-skills) - Explicação detalhada sobre agent skills.
+* [Agent Skills](https://antigravity.google/docs/skills) - Documentação do Google Antigravity sobre Agent Skills.
+* [Usando Skills no Claude](https://support.claude.com/pt/articles/12512180-usando-skills-no-claude) - Documentação da Anthropic sobre como usar skills no Claude.
+* [Como instalar o VSCode](https://code.visualstudio.com/download)- Link direto para download.
+* [Como baixar o Antigravity](https://antigravity.google/download) - Página oficial de download da IDE do Google DeepMind.
+* [Documentação oficial do pacote uv](https://docs.astral.sh/uv/) - Você saberá todos os detalhes sobre o `uv` e como ele é importante no Python.
+* [venv — Criação de ambientes virtuais](https://docs.python.org/pt-br/3/library/venv.html) - Explicação completa de como funcionam os venvs.
+* [Conjunto de ícones de modelos de IA/LLM](https://lobehub.com/pt-BR/icons) - site muito bom para conseguir ícones do ecossistema de IA.
+* [Devicon](https://devicon.dev/) - site bem completo também com ícones gerais sobre tecnologia.
+* [DownGit](https://downgit.github.io/#/home) - Gera downloads automáticos de pastas zip a partir de arquivos específicos em repositórios do GitHub.
 * [Skills.sh](https://skills.sh) - Biblioteca completa da Vercel com várias skills disponíveis gratuitamente.
+* [Mermaid](https://github.com/mermaid-js/mermaid) - Repositório oficial da linguagem Mermaid.
 
 
 ## Contribuições
