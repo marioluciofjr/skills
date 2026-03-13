@@ -49,44 +49,27 @@ Se tiver dúvidas, só acessar os [Links úteis](#links-úteis)
 ## Como adicionar uma skill deste repositório no Antigravity
 <img width="348" height="170" alt="Image" src="https://github.com/user-attachments/assets/145da45d-dc81-47e6-8a38-d2ad5a0519d0" /><br><br>
 
-### Modo Manual
-1. No seu Antigravity, use o caminho File > Open Folder e ache o diretório `C:\Users\seu_usuario\.gemini\antigravity`
-2. No terminal do Antigravity você usa este comando e dá ENTER:
-   ```powershell
-   npx skills add marioluciofjr/skills
-   ```
-3. Ao aparecer a tela do Skills CLI, em `Select skills to install`, navegue com as teclas seta para baixo ou seta para cima e escolhe uma ou mais opções apertando ESPAÇO.
-4. Assim que escolher, aperte a tecla ENTER
-5. Em `Additional agents`, procure por 'Antigravity' (pode aparecer como primeira opção inclusive), basta clicar em ENTER
-6. Em `Installation scope`, escolha a opção 'Project' e dê ENTER
-7. Em Installation method`, escolha 'Symlink' e dê ENTER
-8. Em `Proceed with installation?, confirme com 'Yes' e dê ENTER
-9. Ao ver essa linha no CLI significa que deu certo `◇  Installation complete`
-
-> [!NOTE]
-> Pode ser que apareça um comando `Install the find-skills skill? It helps your agent discover and 
-suggest skills.`. É algo opcional, mas você pode escolher Yes e dar ENTER. É uma skill para achar outras skills.
-
-### Modo via Agent Antigravity
-
-Você pode também delegar para o Antigravity instalar para você. Basta só colocar no prompt do Agent e dar ENTER:
+Delegue essa tarefa para o Antigravity instalar a skill. Basta só colocar este prompt abaixo no Agent do Antigravity e dar ENTER:
 
 ```text
 ## contexto
-COMANDO = npx skills add marioluciofjr/skills
-DIRETÓRIO = .gemini\antigravity
-SKILL = COLOQUE AQUI O NOME DA SKILL
+DIRETÓRIO PRINCIPAL = .gemini\antigravity
+COMANDO = npx skills add https://github.com/marioluciofjr/skills --skill NOME DA SKILL
 
 ## tarefa
 Pense passo a passo para executar a tarefa:
-1 - Busque o DIRETÓRIO
+1 - Busque o DIRETÓRIO PRINCIPAL
 2 - Use o COMANDO e dê enter
-3 - Seta para baixo até chegar na SKILL, clique em espaço e dê enter
-4 - Em `Additional agents`, procure por 'Antigravity' (pode aparecer como primeira opção inclusive), basta clicar em enter
-5 - Em `Installation scope`, escolha a opção 'Project' e dê enter
-6 - Em Installation method`, escolha 'Symlink' e dê enter
-7 - Em `Proceed with installation?, confirme com 'Yes' e dê enter
-8 - Ao ver essa linha no CLI significa que deu certo `◇  Installation complete` e ode finalizar a tarefa
+3 - Em `Additional agents`, procure por 'Antigravity' (pode aparecer como primeira opção inclusive), basta clicar em enter
+4 - Em `Installation scope`, escolha a opção 'Project' e dê enter
+5 - Em Installation method`, escolha 'Symlink' e dê enter
+6 - Em `Proceed with installation?, confirme com 'Yes' e dê enter
+7 - Verifique se a instalação deu certo, pois deve aparecer `◇  Installation complete`
+8 - Verifique se no DIRETÓRIO PRINCIPAL já tem uma pasta chamada skills. Se tiver, pule para a próxima etapa. Se não tiver, crie para ficar assim .gemini\antigravity\skills
+9 - Mova as skills deste diretório .gemini\antigravity\.agents\skills\ para este diretório .gemini\antigravity\skills
+10 - Exclua as pastas .gemini\antigravity\.agents e .gemini\antigravity\.agent
+11 - Exclua o arquivo skills-lock.json
+12 - Finalize a tarefa
 ```
 
 Se tiver dúvidas, só acessar os [Links úteis](#links-úteis)
