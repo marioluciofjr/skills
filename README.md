@@ -31,6 +31,7 @@ Cada pasta é uma skill diferente. Para baixar os arquivos .ZIP de maneira separ
 * [calculadora-cdi](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/calculadora-cdi)
 * [bbb-estatisticas](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/bbb-estatisticas)
 * [diagrama-mermaid](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/diagrama-mermaid)
+* [analise-swot](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/analise-swot)
 
 ## Como adicionar uma skill deste repositório no Claude
 
