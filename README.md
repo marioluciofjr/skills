@@ -60,7 +60,7 @@ COMANDO = npx skills add https://github.com/marioluciofjr/skills --skill NOME DA
 
 ## tarefa
 Pense passo a passo para executar a tarefa:
-1 - Busque o DIRETÓRIO PRINCIPAL
+1 - Busque no computador o DIRETÓRIO PRINCIPAL
 2 - Use o COMANDO e dê enter
 3 - Em `Additional agents`, procure por 'Antigravity' (pode aparecer como primeira opção inclusive), basta clicar em enter
 4 - Em `Installation scope`, escolha a opção 'Project' e dê enter
