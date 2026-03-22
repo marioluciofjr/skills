@@ -33,6 +33,7 @@ Cada pasta é uma skill diferente. Para baixar os arquivos .ZIP de maneira separ
 * [diagrama-mermaid](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/diagrama-mermaid)
 * [analise-swot](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/analise-swot)
 * [discurso-tadeu](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/discurso-tadeu)
+* [gerador-soul](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/gerador-soul)
 
 ## Como adicionar uma skill deste repositório no Claude
 
