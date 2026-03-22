@@ -61,13 +61,13 @@ COMANDO = npx skills add https://github.com/marioluciofjr/skills --skill NOME DA
 
 ## tarefa
 Pense passo a passo para executar a tarefa:
-1 - Busque no computador o DIRETÓRIO PRINCIPAL
-2 - Use o COMANDO e dê enter
-3 - Em `Additional agents`, procure por 'Antigravity' (pode aparecer como primeira opção inclusive), basta clicar em enter
-4 - Em `Installation scope`, escolha a opção 'Project' e dê enter
-5 - Em Installation method`, escolha 'Symlink' e dê enter
-6 - Em `Proceed with installation?, confirme com 'Yes' e dê enter
-7 - Verifique se a instalação deu certo, pois deve aparecer `◇  Installation complete`
+1 - Busque no computador o DIRETÓRIO PRINCIPAL definido no contexto.
+2 - Use o COMANDO definido no contexto e dê enter.
+3 - Em `Additional agents`, procure por 'Antigravity' (pode aparecer como primeira opção inclusive), basta clicar em enter.
+4 - Em `Installation scope`, escolha a opção 'Project' e dê enter.
+5 - Em Installation method`, escolha 'Symlink' e dê enter.
+6 - Em `Proceed with installation?, confirme com 'Yes' e dê enter.
+7 - Verifique se a instalação deu certo, pois deve aparecer `◇  Installation complete`.
 8 - Verifique se no DIRETÓRIO PRINCIPAL já tem uma pasta chamada skills. Se tiver, pule para a próxima etapa. Se não tiver, crie para ficar assim .gemini\antigravity\skills
 9 - Mova as skills deste diretório .gemini\antigravity\.agents\skills\ para este diretório .gemini\antigravity\skills
 10 - Exclua as pastas .gemini\antigravity\.agents e .gemini\antigravity\.agent
