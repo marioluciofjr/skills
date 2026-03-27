@@ -69,8 +69,7 @@ Pense passo a passo para executar a tarefa:
 4 - Verifique se no DIRETÓRIO PRINCIPAL já tem uma pasta chamada skills. Se tiver, pule para a próxima etapa. Se não tiver, crie para ficar assim .gemini\antigravity\skills
 5 - Mova as skills deste diretório .gemini\antigravity\.agents\skills\ para este diretório .gemini\antigravity\skills
 6 - Exclua as pastas .gemini\antigravity\.agents e .gemini\antigravity\.agent
-7 - Exclua o arquivo skills-lock.json
-8 - Finalize a tarefa
+7 - Finalize a tarefa
 ```
 
 Se tiver dúvidas, só acessar os [Links úteis](#links-úteis)
