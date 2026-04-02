@@ -5,6 +5,7 @@ Repositório com minhas skills para Claude, Claude Code, Antigravity, Opencode, 
 ![license - Apache 2.0](https://img.shields.io/badge/license-Apache2.0-green)
 ![site - prazocerto.me](https://img.shields.io/badge/site-prazocerto.me-230023)
 ![linkedin - @marioluciofjr](https://img.shields.io/badge/linkedin-marioluciofjr-blue)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/marioluciofjr/skills)
 
 ## Índice
 
