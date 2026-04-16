@@ -3,8 +3,8 @@ Repositório com minhas skills para Claude, Claude Code, Antigravity, Opencode, 
 
 [![Made with Python](https://img.shields.io/badge/Python->=3.10-blue?logo=python&logoColor=white)](https://python.org "Go to Python homepage")
 ![license - Apache 2.0](https://img.shields.io/badge/license-Apache2.0-green)
-![site - prazocerto.me](https://img.shields.io/badge/site-prazocerto.me-230023)
-![linkedin - @marioluciofjr](https://img.shields.io/badge/linkedin-marioluciofjr-blue)
+[![site - prazocerto.me](https://img.shields.io/badge/site-prazocerto.me-230023)](https://prazocerto.me/contato "Solicite um orçamento")
+[![linkedin - @marioluciofjr](https://img.shields.io/badge/linkedin-marioluciofjr-blue)](https://linkedin.com/in/marioluciofjr "Solicite conexão no meu LinkedIn")
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/marioluciofjr/skills)
 
 ## Índice
