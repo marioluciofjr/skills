@@ -28,9 +28,6 @@ Esta pasta contém uma rica base científica mandatória que embasará o laudo:
 #### Assets
 Essa pasta detém o cérebro prático para moldar o formato. Possui 10 exemplos individuais criados minuciosamente baseados nos grandes polos fonéticos do Brasil (e.g. `paulistano.md`, `cearense.md`, `amazonesense.md` etc). Eles mostram a densidade (aproximadamente 400 palavras cada) que o modelo deve mirar para cobrir o output exigido de forma rica e imersiva.
 
-#### Testes
-Essa pasta detém os laboratórios e testes da skill em `teste_video.md` testando o YouTube como entrada.
-
 ## tarefa
 Utilizando uma lógica rigorosa em cadeia de pensamento (Chain of Thought), execute sequencialmente as seguintes tarefas quando o vídeo for fornecido:
 1. Absorção Fonética: Acesse os documentos em `references/` e imirja na taxonomia da fonação brasileira e nos conceitos estipulados de consoantes, vogais e IPA.
