@@ -40,6 +40,7 @@ Cada pasta é uma skill diferente. Para baixar os arquivos .ZIP de maneira separ
 * [trends-keywords](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/trends-keywords)
 * [contexto_sotaque](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/contexto_sotaque)
 * [resume-papers](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/resume-papers)
+* [mei-irpf](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/mei-irpf)
 
 ## Como adicionar uma skill deste repositório no Claude
 
