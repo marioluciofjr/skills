@@ -1,5 +1,5 @@
 ---
-name: contexto_sotaque
+name: contexto-sotaque
 description: "Esta skill atua como um laboratório de fonética articulatória e prosódica. Utilize esta skill SEMPRE que a pessoa usuária enviar um link de vídeo do YouTube ou um arquivo de vídeo (.mp4) de até 10 minutos (ex: 'faça um raio-x desse sotaque', 'qual é o aspecto fonético desse vídeo', 'queria o contexto desse dialeto pra TTS') e pedir para estruturar o contexto fonético do sotaque do orador para prover background prosódico a modelos como gemini-3.1-flash-tts-preview. A skill orienta a analisar propriedades orais cientificamente perante as bases de vogais, consoantes e a transcrição fonética IPA."
 author: Mário Lúcio
 version: 1.0.0
