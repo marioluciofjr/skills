@@ -38,7 +38,7 @@ Cada pasta é uma skill diferente. Para baixar os arquivos .ZIP de maneira separ
 * [gerador-de-agentes](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/gerador-de-agentes)
 * [revisa-seo-geo-skill](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/revisa-seo-geo-skill)
 * [trends-keywords](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/trends-keywords)
-* [contexto_sotaque](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/contexto_sotaque)
+* [contexto-sotaque](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/contexto-sotaque)
 * [resume-papers](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/resume-papers)
 * [mei-irpf](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/mei-irpf)
 * [design-thinking-mjv](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/design-thinking-mjv)
