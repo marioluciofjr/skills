@@ -45,6 +45,7 @@ Cada pasta é uma skill diferente. Para baixar os arquivos .ZIP de maneira separ
 * [metodo-3w1h](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/metodo-3w1h)
 * [resumo-star](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/resumo-star)
 * [empatias](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/empatias)
+* [paralelismo-negativo](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/paralelismo-negativo)
 
 ## Como adicionar uma skill deste repositório no Claude
 
