@@ -49,6 +49,7 @@ Cada pasta é uma skill diferente. Para baixar os arquivos .ZIP de maneira separ
 * [aos-fatos](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/aos-fatos)
 * [lorem-picsum](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/lorem-picsum)
 * [padrao-pts](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/padrao-pts)
+* [remote-mcp](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/remote-mcp)
 
 ## Como adicionar uma skill deste repositório no Claude
 
