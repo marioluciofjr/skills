@@ -50,6 +50,7 @@ Cada pasta é uma skill diferente. Para baixar os arquivos .ZIP de maneira separ
 * [padrao-pts](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/padrao-pts)
 * [remote-mcp](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/remote-mcp)
 * [spotify-audio-url](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/spotify-audio-url)
+* [eeat-audit](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/eeat-audit)
 
 ## Como adicionar uma skill deste repositório no Claude
 
