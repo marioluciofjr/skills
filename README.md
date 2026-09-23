@@ -52,6 +52,7 @@ Cada pasta é uma skill diferente. Para baixar os arquivos .ZIP de maneira separ
 * [spotify-audio-url](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/spotify-audio-url)
 * [eeat-audit](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/eeat-audit)
 * [craque-neto](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/craque-neto)
+* [redacao-enem](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/redacao-enem)
 
 ## Como adicionar uma skill deste repositório no Claude
 
