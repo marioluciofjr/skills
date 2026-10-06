@@ -1,0 +1,16 @@
+<!-- segmented-bars.html — janela com controle segmentado; o cursor troca de aba e as barras mudam de série.
+     Receita: M.recipes.segmentedBars('#sX', t, { switchAfter: 1.45 })
+     Dados: cada linha tem rótulo/valor da série A (.a) e da série B (.b); .fill[data-a] e [data-b] = proporções 0..1.
+     Ponte para o encerramento: M.recipes.dissolveToBars('#sX', t) e depois
+       M.brand.outro(t2, { sources: () => M.$$('#sX .fill'), hide: '#sX' }).
+     Ideal para: comparar duas visões do mesmo ranking (volume x eficiência, total x média, antes x depois). -->
+<div class="win" style="left:940px;top:130px;width:840px;height:800px">
+  <div class="win-bar"><span></span><span></span><span></span><em>título · contexto</em></div>
+  <div class="win-body" style="padding:36px">
+    <div class="segc"><div class="pl"></div><span>Série A</span><span>Série B</span></div>
+    <div style="margin-top:20px">
+      <div class="srow"><div class="rowtop"><div class="flip"><div class="a lab">Item A1</div><div class="b lab">Item B1</div></div><div class="flip vr"><div class="a num">742,4k</div><div class="b num">1.487,3</div></div></div><div class="track"><div class="fill" data-a="1" data-b="1"></div></div></div>
+      <div class="srow"><div class="rowtop"><div class="flip"><div class="a lab">Item A2</div><div class="b lab">Item B2</div></div><div class="flip vr"><div class="a num">440,7k</div><div class="b num">1.140,3</div></div></div><div class="track"><div class="fill" data-a=".594" data-b=".767"></div></div></div>
+    </div>
+  </div>
+</div>

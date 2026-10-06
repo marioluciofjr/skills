@@ -1,0 +1,19 @@
+<!-- search-list.html — janela com busca digitada + lista ranqueada com barras + item sinalizado.
+     Receita: M.recipes.searchList('#sX', t)  (cursor clica na busca, digita data-type, lista entra, barras crescem)
+     Dados: .fill[data-s] = proporção 0..1 em relação ao 1º item; .c[data-n] = valor do contador.
+     Ideal para: termos mais citados, palavras-chave, itens mais buscados, top-N de qualquer métrica. -->
+<div class="win" style="left:960px;top:140px;width:820px;height:780px">
+  <div class="win-bar"><span></span><span></span><span></span><em>título · contexto</em></div>
+  <div class="win-body">
+    <div class="search">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <span><span data-type="termo buscado"></span><span class="caret"></span></span>
+    </div>
+    <div class="rows">
+      <div class="trow"><span class="r">01</span><span class="t">item um</span><div class="track"><div class="fill" data-s="1"></div></div><span class="c" data-n="2469">0</span></div>
+      <div class="trow"><span class="r">02</span><span class="t">item dois</span><div class="track"><div class="fill" data-s=".8"></div></div><span class="c" data-n="1975">0</span></div>
+      <div class="trow"><span class="r">03</span><span class="t">item três</span><div class="track"><div class="fill" data-s=".6"></div></div><span class="c" data-n="1481">0</span></div>
+    </div>
+    <div class="flag"><span class="mono" style="font-size:16px;color:#777">20º</span><span class="t">item sinalizado</span><span class="tag">atenção</span></div>
+  </div>
+</div>

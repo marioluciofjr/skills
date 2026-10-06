@@ -1,0 +1,12 @@
+<!-- scene-shell.html — esqueleto de cena: bloco de texto à esquerda + área de UI à direita.
+     Receita: M.sceneIn('#sX', t); M.headIn('#sX', t); ...; M.sceneOut('#sX', tFim)
+     Regras: id só na <section> (para seletores); todo estilo por classe. "|" quebra a headline.
+     Área segura do palco 1920x1080: x 140..1780, y 130..960 (o chrome ocupa topo e base). -->
+<section class="scene" id="sX">
+  <div class="left">
+    <div class="eyebrow"><b>01</b><i></i>Rótulo curto</div>
+    <h1 class="h" data-split>Headline em|duas linhas</h1>
+    <p class="sub">Uma frase de apoio com o insight principal da cena, em até duas linhas.</p>
+  </div>
+  <!-- componente de UI aqui (ver demais arquivos desta pasta) -->
+</section>

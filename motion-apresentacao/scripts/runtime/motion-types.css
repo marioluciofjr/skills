@@ -1,0 +1,22 @@
+/* motion-types.css — estilos mínimos que os tipos de movimento de motion-types.js precisam.
+   Só classes (nunca ids), para o echo trail copiar os elementos sem perder o estilo. */
+
+/* marcador de destaque (highlight): a barra fica atrás do texto e cresce da esquerda */
+.mk { position: relative; display: inline-block; background: none; color: inherit; padding: 0 .12em; margin: 0 -.12em; }
+.mk .mk-bar { position: absolute; left: 0; right: 0; top: .08em; bottom: .04em; background: var(--fg); transform: scaleX(0); transform-origin: left; z-index: 0; }
+.mk .mk-t { position: relative; z-index: 1; }
+.mk.mk-under .mk-bar { top: auto; height: .12em; bottom: -.02em; }
+.mk.mk-ink .mk-bar { display: none; }
+.mk.mk-serif .mk-t { font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 400; letter-spacing: -.01em; }
+
+/* desenho de traço (drawLine): contorno sem preenchimento, pontas arredondadas */
+.draw { overflow: visible; }
+.draw path, .draw line, .draw polyline, .draw polygon, .draw circle, .draw rect, .draw ellipse {
+  fill: none; stroke: var(--fg); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* push de câmera (cameraPush): invólucro do conteúdo da cena, para não brigar com sceneIn/sceneOut */
+.cam { position: absolute; inset: 0; transform-origin: 50% 50%; }
+
+/* parallax: camadas posicionadas livremente; a profundidade vem do atributo data-depth */
+[data-depth] { will-change: transform; }

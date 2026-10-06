@@ -1,0 +1,102 @@
+/* components.css — kit de UI P&B para mockups (janela, celular, cards, listas, gráficos).
+   Cada bloco corresponde a um snippet em scripts/components/ e a uma receita em motion-recipes.js.
+   Regra: estilizar SEMPRE por classe, nunca por id (os clones do echo perdem os ids). */
+
+/* ---------- janela de app / desktop ---------- */
+.win { position: absolute; background: var(--g5); border: 1px solid var(--g3); border-radius: 28px; overflow: hidden; box-shadow: 0 60px 140px rgba(0,0,0,.9), inset 0 1px 0 rgba(255,255,255,.07); }
+.win-bar { height: 56px; border-bottom: 1px solid #1c1c1c; display: flex; align-items: center; padding: 0 22px; gap: 9px; position: relative; }
+.win-bar span { width: 12px; height: 12px; border-radius: 50%; background: #2a2a2a; }
+.win-bar em { position: absolute; left: 0; right: 0; text-align: center; font-style: normal; font-family: var(--font-mono), monospace; font-size: 15px; color: var(--g2); letter-spacing: .08em; }
+.win-body { padding: 32px 36px; }
+
+/* ---------- celular ---------- */
+.phone { position: absolute; width: 410px; height: 820px; border-radius: 64px; border: 2px solid #2e2e2e; background: #030303; padding: 12px; box-shadow: 0 60px 140px rgba(0,0,0,.9), inset 0 0 0 1px #111; }
+.screen { position: relative; width: 100%; height: 100%; border-radius: 52px; background: #0b0b0b; overflow: hidden; padding: 68px 24px 24px; }
+.notch { position: absolute; top: 14px; left: 50%; transform: translateX(-50%); width: 118px; height: 34px; border-radius: 20px; background: #000; border: 1px solid #1a1a1a; }
+.ph-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.ph-head b { font-size: 24px; font-weight: 600; letter-spacing: -.02em; }
+.live { font-family: var(--font-mono), monospace; font-size: 13px; color: var(--g1); display: flex; align-items: center; gap: 8px; letter-spacing: .12em; }
+.live:before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--fg); }
+
+/* ---------- cards e números ---------- */
+.card { background: var(--g4); border: 1px solid #1f1f1f; border-radius: 26px; padding: 22px 24px; }
+.lbl { font-family: var(--font-mono), monospace; font-size: 13px; letter-spacing: .14em; color: var(--g1); text-transform: uppercase; }
+.big { font-size: 92px; font-weight: 700; letter-spacing: -.05em; line-height: 1; margin: 10px 0 14px; }
+.mid { font-size: 46px; font-weight: 700; letter-spacing: -.04em; line-height: 1; margin-top: 8px; }
+.cap { font-size: 15px; color: var(--g1); margin-top: 6px; }
+.pill { display: inline-block; background: var(--fg); color: var(--bg); font-family: var(--font-mono), monospace; font-size: 14px; font-weight: 500; padding: 7px 12px; border-radius: 99px; }
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 14px 0; }
+.duo .card { padding: 18px 20px; }
+
+/* ---------- barras verticais ---------- */
+.vbars { display: flex; align-items: flex-end; justify-content: space-around; height: 200px; margin-top: 14px; padding-top: 30px; }
+.vb { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 80px; }
+.vb .v { font-family: var(--font-mono), monospace; font-size: 16px; }
+.vb .bar { width: 64px; background: var(--fg); border-radius: 12px 12px 4px 4px; transform-origin: bottom; }
+.vb .bar.target { background: transparent; border: 2px dashed #6a6a6a; }
+.vb .n { font-family: var(--font-mono), monospace; font-size: 12px; color: var(--g1); letter-spacing: .06em; text-align: center; }
+
+/* ---------- notificação / card flutuante (invertido) ---------- */
+.notif { position: absolute; background: var(--fg); color: var(--bg); border-radius: 24px; padding: 22px 26px; box-shadow: 0 30px 80px rgba(0,0,0,.8); }
+.notif .t { display: flex; gap: 12px; align-items: center; font-family: var(--font-mono), monospace; font-size: 13px; letter-spacing: .12em; color: #555; margin-bottom: 10px; }
+.notif b { display: block; font-size: 30px; letter-spacing: -.03em; line-height: 1.1; }
+.notif b.huge { font-size: 80px; letter-spacing: -.05em; line-height: 1; }
+.notif p { margin: 8px 0 0; font-size: 18px; color: #444; }
+
+/* ---------- busca + lista com barras ---------- */
+.search { height: 72px; border: 1px solid #2c2c2c; border-radius: 18px; display: flex; align-items: center; gap: 16px; padding: 0 22px; font-size: 28px; background: #0f0f0f; }
+.search svg { width: 28px; height: 28px; stroke: var(--fg); fill: none; stroke-width: 2; stroke-linecap: round; }
+.rows { margin-top: 24px; }
+.trow { display: grid; grid-template-columns: 56px 230px 1fr 110px; align-items: center; gap: 18px; height: 66px; padding: 0 14px; border-radius: 14px; }
+.trow .r { font-family: var(--font-mono), monospace; font-size: 16px; color: var(--g2); }
+.trow .t { font-size: 28px; font-weight: 600; letter-spacing: -.02em; }
+.trow .c { font-family: var(--font-mono), monospace; font-size: 20px; text-align: right; }
+.track { height: 10px; border-radius: 6px; background: #1c1c1c; overflow: hidden; }
+.fill { height: 100%; background: var(--fg); border-radius: 6px; transform-origin: left; transform: scaleX(0); }
+.flag { margin-top: 20px; border: 1.5px dashed #5a5a5a; border-radius: 16px; padding: 18px 20px; display: grid; grid-template-columns: 56px 1fr auto; gap: 18px; align-items: center; }
+.flag .t { font-size: 26px; font-weight: 600; color: #cfcfcf; }
+.flag .tag { font-family: var(--font-mono), monospace; font-size: 13px; letter-spacing: .12em; border: 1px solid var(--fg); border-radius: 99px; padding: 7px 12px; text-transform: uppercase; }
+
+/* ---------- ranking de pessoas ---------- */
+.lrow { display: grid; grid-template-columns: 54px 64px 1fr auto; align-items: center; gap: 20px; height: 104px; border-bottom: 1px solid #1a1a1a; position: relative; }
+.lrow:last-child { border-bottom: 0; }
+.lrow .r { font-family: var(--font-mono), monospace; font-size: 22px; color: var(--g2); }
+.av { width: 60px; height: 60px; border-radius: 50%; border: 1.5px solid var(--fg); display: grid; place-items: center; font-weight: 600; font-size: 20px; }
+.lrow:first-child .av { background: var(--fg); color: var(--bg); }
+.nm { font-size: 28px; font-weight: 600; letter-spacing: -.02em; }
+.co { font-size: 18px; color: var(--g1); margin-top: 4px; }
+.val { text-align: right; }
+.val .c { font-family: var(--font-mono), monospace; font-size: 30px; font-weight: 500; }
+.val .k { font-size: 15px; color: var(--g1); margin-top: 4px; }
+.lbar { position: absolute; left: 138px; right: 0; bottom: -1px; height: 2px; background: var(--fg); transform-origin: left; transform: scaleX(0); }
+
+/* ---------- pipeline de etapas ---------- */
+.rail { position: absolute; height: 2px; background: #3a3a3a; transform-origin: left; }
+.pulse { position: absolute; width: 14px; height: 14px; margin-top: -6px; border-radius: 50%; background: var(--fg); box-shadow: 0 0 24px 6px rgba(255,255,255,.5); opacity: 0; }
+.node { position: absolute; width: 365px; height: 230px; background: var(--g5); border: 1px solid var(--g3); border-radius: 26px; padding: 26px 28px; }
+.node .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 22px; }
+.node .top span { font-family: var(--font-mono), monospace; font-size: 15px; color: var(--g2); }
+.node svg { width: 44px; height: 44px; stroke: var(--fg); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.node b { display: block; font-size: 30px; letter-spacing: -.03em; font-weight: 600; }
+.node p { margin: 10px 0 0; font-size: 19px; line-height: 1.35; color: var(--g1); }
+
+/* ---------- terminal / código ---------- */
+.term { position: absolute; border: 1px solid var(--g3); border-radius: 22px; background: #070707; padding: 26px 34px; }
+.term .lbl { margin-bottom: 16px; }
+.term pre { margin: 0; font-family: var(--font-mono), monospace; font-size: 31px; color: var(--fg); white-space: pre; }
+.term pre .p { color: var(--g2); }
+
+/* ---------- controle segmentado + barras horizontais ---------- */
+.segc { position: relative; height: 64px; border-radius: 20px; background: #121212; border: 1px solid #262626; display: grid; grid-template-columns: 1fr 1fr; }
+.segc .pl { position: absolute; left: 6px; top: 6px; width: calc(50% - 6px); height: calc(100% - 12px); background: var(--fg); border-radius: 14px; }
+.segc span { position: relative; display: grid; place-items: center; font-size: 22px; font-weight: 600; color: #fff; mix-blend-mode: difference; }
+.srow { height: 112px; display: flex; flex-direction: column; justify-content: center; gap: 16px; }
+.rowtop { display: flex; justify-content: space-between; align-items: center; height: 36px; }
+.flip { position: relative; height: 36px; overflow: hidden; flex: 1; }
+.flip.vr { flex: 0 0 200px; }
+.flip > div { position: absolute; left: 0; right: 0; top: 0; line-height: 36px; white-space: nowrap; }
+.flip.vr > div { text-align: right; }
+.flip .b { opacity: 0; }
+.rowtop .lab { font-size: 28px; font-weight: 600; letter-spacing: -.02em; }
+.rowtop .num { font-family: var(--font-mono), monospace; font-size: 26px; }
+.srow .track { height: 12px; }

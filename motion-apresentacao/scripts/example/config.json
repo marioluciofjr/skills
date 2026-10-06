@@ -1,0 +1,25 @@
+{
+  "title": "Presença digital dos CEOs no LinkedIn",
+  "lang": "pt-BR",
+  "locale": "pt-BR",
+  "width": 1920,
+  "height": 1080,
+  "loop": true,
+  "brand": {
+    "name": "Elementar Comunicação",
+    "logo": "logo.png",
+    "tagline": "Somos um ecossistema de|gestão reputacional.",
+    "tagline_dim": 4,
+    "url": "elementarcomunicacao.com.br",
+    "intro": {
+      "kicker": "apresenta",
+      "title": "Presença digital dos CEOs no LinkedIn",
+      "meta": "Panorama 2025/26 · FGV EAESP"
+    }
+  },
+  "chrome": {
+    "left": "Elementar Comunicação",
+    "right": "Presença digital dos CEOs no LinkedIn · 2025/26",
+    "sections": ["O que encontramos?", "Sobre os temas", "Sobre os líderes", "Metodologias", "Dados por setor"]
+  }
+}

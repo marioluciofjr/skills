@@ -1,0 +1,28 @@
+<!-- phone-stats.html — celular com KPI principal, dois KPIs secundários e barras verticais com meta.
+     Receita: M.recipes.phone('#sX', t)   (sobe o celular, cards em cascata, contadores, barras)
+     Dados: [data-n] = valor final do contador; [data-dec] = casas decimais. Altura das .bar em px
+     proporcional ao valor (máx. ~150px). Use .bar.target para a meta tracejada.
+     Posição sugerida: left 1260, top 125 (lado direito). -->
+<div class="phone" style="left:1260px;top:125px">
+  <div class="screen">
+    <div class="notch"></div>
+    <div class="ph-head"><b>Panorama</b><span class="live">2025</span></div>
+    <div class="card">
+      <div class="lbl">Métrica principal</div>
+      <div class="big" data-n="8116">0</div>
+      <span class="pill">+96% vs ano anterior</span>
+    </div>
+    <div class="duo">
+      <div class="card"><div class="lbl">KPI A</div><div class="mid" data-n="225">0</div><div class="cap">legenda curta</div></div>
+      <div class="card"><div class="lbl">KPI B</div><div class="mid" data-n="36.07" data-dec="2">0</div><div class="cap">legenda curta</div></div>
+    </div>
+    <div class="card">
+      <div class="lbl">Comparativo</div>
+      <div class="vbars">
+        <div class="vb"><div class="v">31</div><div class="bar" style="height:46px"></div><div class="n">2022</div></div>
+        <div class="vb"><div class="v">36</div><div class="bar" style="height:53px"></div><div class="n">2025</div></div>
+        <div class="vb"><div class="v">104</div><div class="bar target" style="height:150px"></div><div class="n">META</div></div>
+      </div>
+    </div>
+  </div>
+</div>
