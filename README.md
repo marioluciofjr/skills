@@ -54,6 +54,7 @@ Cada pasta é uma skill diferente. Para baixar os arquivos .ZIP de maneira separ
 * [craque-neto](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/craque-neto)
 * [redacao-enem](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/redacao-enem)
 * [motion-apresentacao](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/motion-apresentacao)
+* [image-to-gif](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/image-to-gif)
 
 ## Como adicionar uma skill deste repositório no Claude
 

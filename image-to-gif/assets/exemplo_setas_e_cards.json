@@ -1,0 +1,26 @@
+{
+  "entrada": "traduzida.png",
+  "saida": "saida.gif",
+  "quadros": 42,
+  "ms_por_quadro": 90,
+  "etapas": 7,
+  "setas_piscantes": [
+    {"nome": "seta card 1 (Máximo de tokens)", "pontos": [[354, 140], [401, 140]], "largura": 12, "limiar_limpeza": 735, "etapa": 0},
+    {"nome": "seta vermelha card 2 (distribuição regular)", "pontos": [[349, 383.5], [440.5, 383.5], [440.5, 357.5]], "largura": 8, "limiar_limpeza": 740, "etapa": 1},
+    {"nome": "seta verde card 2 (distribuição ajustada)", "pontos": [[441, 382.5], [542.6, 382.5], [542.6, 359]], "largura": 8, "limiar_limpeza": 740, "etapa": 1},
+    {"nome": "seta card 3 (Top_p)", "pontos": [[363, 517], [407, 517]], "largura": 12, "limiar_limpeza": 735, "etapa": 2},
+    {"nome": "seta card 4 (Top_k)", "pontos": [[363, 691.5], [407, 691.5]], "largura": 12, "limiar_limpeza": 735, "etapa": 3},
+    {"nome": "seta card 5 (Penalidade de frequência)", "pontos": [[363, 873], [407, 873]], "largura": 12, "limiar_limpeza": 735, "etapa": 4},
+    {"nome": "seta card 6 (Penalidade de presença)", "pontos": [[363, 1041], [407, 1041]], "largura": 12, "limiar_limpeza": 735, "etapa": 5},
+    {"nome": "seta card 7 (Parada)", "pontos": [[363, 1205], [407, 1205]], "largura": 12, "limiar_limpeza": 735, "etapa": 6}
+  ],
+  "cards": [
+    {"nome": "card 1", "caixa": [7.5, 67.5, 970.5, 229.5], "raio": 24, "cor": [46, 184, 140], "etapa": 0},
+    {"nome": "card 2", "caixa": [7.5, 238.5, 970.5, 418], "raio": 24, "cor": [88, 128, 232], "etapa": 1},
+    {"nome": "card 3", "caixa": [7.5, 425.5, 970.5, 605.5], "raio": 24, "cor": [46, 184, 140], "etapa": 2},
+    {"nome": "card 4", "caixa": [7.5, 614, 970.5, 793.5], "raio": 24, "cor": [88, 128, 232], "etapa": 3},
+    {"nome": "card 5", "caixa": [7.5, 801, 970.5, 958.5], "raio": 24, "cor": [46, 184, 140], "etapa": 4},
+    {"nome": "card 6", "caixa": [7.5, 968, 970.5, 1125.5], "raio": 24, "cor": [88, 128, 232], "etapa": 5},
+    {"nome": "card 7", "caixa": [7.5, 1134.5, 970.5, 1292], "raio": 24, "cor": [46, 184, 140], "etapa": 6}
+  ]
+}

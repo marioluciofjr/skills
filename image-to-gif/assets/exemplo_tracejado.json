@@ -1,0 +1,24 @@
+{
+  "entrada": "diagrama.png",
+  "saida": "saida.gif",
+  "quadros": 12,
+  "ms_por_quadro": 60,
+  "tracejado": {"traco": 8, "periodo": 18, "espessura": 2.6, "cor": [72, 77, 80]},
+  "caminhos": [
+    {"nome": "seta 1: User -> Mistral OCR", "pontos": [[159, 290.6], [335, 290.6]]},
+    {"nome": "seta 2: Mistral OCR -> caixa de figuras", "pontos": [[686, 290.6], [853, 290.6]]},
+    {"nome": "seta 3: caixa de figuras -> Filter Figures", "pontos": [[968.6, 408], [968.6, 470]]},
+    {"nome": "seta 4 (com curva): Filter Figures -> Figure Analyst",
+     "pontos": [[968.6, 710], [968.6, 726], {"controle": [968.6, 745.6], "ate": [947, 745.6]}, [749, 745.6]]},
+    {"nome": "seta 5: Figure Analyst -> Figure Insights", "pontos": [[528, 745.6], [324, 745.6]],
+     "tracejado": {"cor": [43, 47, 46]}},
+    {"nome": "ramo interno esquerdo: Document intelligence -> Convert",
+     "pontos": [[515.1, 286], [515.1, 297], {"controle": [515.1, 306.6], "ate": [503, 306.6]}, [440, 306.6],
+                {"controle": [427.1, 306.6], "ate": [427.1, 319]}, [427.1, 323]],
+     "tracejado": {"traco": 10, "cor": [37, 31, 26], "limiar_limpeza": 600}},
+    {"nome": "ramo interno direito: Document intelligence -> Extract",
+     "pontos": [[515.1, 286], [515.1, 297], {"controle": [515.1, 306.6], "ate": [527, 306.6]}, [590, 306.6],
+                {"controle": [603.1, 306.6], "ate": [603.1, 319]}, [603.1, 323]],
+     "tracejado": {"traco": 10, "cor": [37, 31, 26], "limiar_limpeza": 600}}
+  ]
+}
