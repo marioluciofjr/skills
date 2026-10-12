@@ -1,5 +1,5 @@
 # skills
-Repositório com minhas skills para Claude, Claude Code, Antigravity, Gemini Spark, Manus, Perplexity, Opencode, Agno, ADK, OpenClaw, Windsurf, Qwen Code e demais sistemas agênticos.
+Repositório com minhas skills para Claude, Claude Code, Antigravity, Gemini Spark, Gemini App, Manus, Perplexity, Opencode, Agno, ADK, OpenClaw, Windsurf, Qwen Code e demais sistemas agênticos.
 
 [![Made with Python](https://img.shields.io/badge/Python->=3.10-blue?logo=python&logoColor=white)](https://python.org "Go to Python homepage")
 ![license - Apache 2.0](https://img.shields.io/badge/license-Apache2.0-green)
@@ -12,6 +12,7 @@ Repositório com minhas skills para Claude, Claude Code, Antigravity, Gemini Spa
 * [Introdução](#introdução)
 * [Estrutura do projeto](#estrutura-do-projeto)
 * [Como adicionar uma skill deste repositório no Claude](#como-adicionar-uma-skill-deste-repositório-no-claude)
+* [Como adicionar uma skill deste repositório no Gemini App](#como-adicionar-uma-skill-deste-repositório-no-gemini-app)
 * [Como adicionar uma skill deste repositório no Antigravity](#como-adicionar-uma-skill-deste-repositório-no-antigravity)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Links úteis](#links-úteis)
@@ -58,7 +59,7 @@ Cada pasta é uma skill diferente. Para baixar os arquivos .ZIP de maneira separ
 
 ## Como adicionar uma skill deste repositório no Claude
 
-O passo a passo é bem simples: 
+O passo a passo: 
 
 1. Em [Estrutura do projeto](#estrutura-do-projeto), clique no link da skill que deseja baixar a pasta .ZIP
 2. Entre no [Claude](https://claude.ai/new)
@@ -67,6 +68,19 @@ O passo a passo é bem simples:
 5. Clique no menu suspenso 'Adicionar' ![Image](https://github.com/user-attachments/assets/3d9b6977-7229-45f9-8f7d-443a19c173bf)
 6. Escolha a opção 'Fazer upload de uma habilidade'
 7. Faça o upload da pasta .ZIP que acabou de baixar deste repositório
+
+Se tiver dúvidas, só acessar os [Links úteis](#links-úteis)
+
+## Como adicionar uma skill deste repositório no Gemini App
+
+O passo a passo: 
+
+1. Em [Estrutura do projeto](#estrutura-do-projeto), clique no link da skill que deseja baixar a pasta .ZIP
+2. Entre no [Gemini](https://gemini.google.com/app)
+3. Acesse 'Configurações', que fica no rodapé da barra lateral
+4. Clique em 'Habilidades' ![Image](https://github.com/user-attachments/assets/f5a31a26-34f8-43cd-b19d-5c8443d810ac)
+5. Escolha a opção 'Enviar uma habilidade'
+6. Faça o upload da pasta .ZIP que acabou de baixar deste repositório
 
 Se tiver dúvidas, só acessar os [Links úteis](#links-úteis)
 
@@ -125,6 +139,7 @@ Se tiver dúvidas, só acessar os [Links úteis](#links-úteis)
 * [DownGit](https://downgit.github.io/#/home) - Gera downloads automáticos de pastas zip a partir de arquivos específicos em repositórios do GitHub.
 * [Skills.sh](https://skills.sh) - Biblioteca completa da Vercel com várias skills disponíveis gratuitamente.
 * [Mermaid](https://github.com/mermaid-js/mermaid) - Repositório oficial da linguagem Mermaid.
+* [Criar e gerenciar habilidades para os apps do Gemini](https://support.google.com/gemini/answer/17094296?hl=pt-BR&co=GENIE.Platform%3DAndroid&sjid=17502553937028618307-SA)
 
 
 ## Contribuições
