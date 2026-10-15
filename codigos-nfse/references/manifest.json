@@ -1,0 +1,289 @@
+{
+  "versao_manifesto": "1.1",
+  "base": {
+    "arquivo": "references/base-conhecimento-mei-nfse.md",
+    "pesquisa_realizada_em": "2026-10-14",
+    "ultima_verificacao_em": "2026-10-14",
+    "revisar_ate": "2026-11-13"
+  },
+  "politica": {
+    "validade_maxima_dias": 30,
+    "ordem_de_execucao": [
+      "1. Ler a data atual.",
+      "2. Conferir as datas-gatilho (secao datas_gatilho). Se alguma ja passou, aplicar a acao indicada.",
+      "3. Para cada fonte com prioridade 'alta', abrir a URL e procurar os marcadores de versao e os sinais de mudanca.",
+      "4. Marcar a fonte como 'alterada' somente se a pagina mostrar, por escrito, um item de sinais_de_mudanca.",
+      "5. Se um marcador nao aparecer e nao houver sinal de mudanca, marcar a fonte como 'nao verificada'. Algumas paginas carregam o conteudo depois de abrir.",
+      "6. Se houver fonte alterada, nao entregar os codigos das secoes afetadas e informar o usuario.",
+      "7. Se houver fonte nao verificada ou nao houver acesso a web, responder com o aviso 'nao foi possivel confirmar se as tabelas estao atualizadas'."
+    ],
+    "acao_base_vencida": "Se a data atual for posterior a 'revisar_ate', avisar no inicio da resposta que a base esta sem revisao ha mais de 30 dias e reforcar a recomendacao de consultar uma pessoa contadora.",
+    "acao_fonte_alterada": "Informar qual documento mudou, a versao registrada e a versao encontrada, e listar as secoes da base afetadas. Nao inventar o conteudo novo.",
+    "acao_fonte_nao_verificada": "Entregar os codigos com o aviso de verificacao nao realizada e a data da ultima verificacao.",
+    "acao_sem_web": "Entregar a resposta com o aviso de verificacao nao realizada e a data da ultima verificacao.",
+    "manutencao": "Seguir a secao 1.4 da base antes da data 'revisar_ate'. As fontes de prioridade 'media' sao conferidas so na manutencao ou no Passo 4."
+  },
+  "tabelas_incorporadas": {
+    "regra": "As tabelas sao copias. Antes de usar um codigo delas, conferir na fonte oficial se o codigo existe e se a descricao e a mesma (SKILL.md, Passo 4, item 4). Sem conferencia, a certeza maxima e 'Confira no Emissor Nacional'.",
+    "copiadas_em": "2026-10-14",
+    "arquivos": [
+      {
+        "arquivo": "references/tabelas/codigos-tributacao-nacional.csv",
+        "conteudo": "Codigos de Tributacao Nacional de 6 numeros, com subitem da LC 116/2003 e descricao",
+        "fonte_oficial": "https://www.gov.br/nfse/pt-br/mei-e-demais-empresas/codigos-de-tributacao-nacional-nbs",
+        "versao_da_fonte": "Pagina atualizada em 20/08/2024",
+        "linhas": 335,
+        "como_conferir": "Abrir a pagina e procurar o codigo de 6 numeros. A linha deve trazer a mesma descricao."
+      },
+      {
+        "arquivo": "references/tabelas/anexo-viii-item-nbs.csv",
+        "conteudo": "Pares subitem da LC 116/2003 x NBS do Anexo VIII (nao normativo), com a NBS nos formatos com pontos e so com numeros",
+        "fonte_oficial": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexoviii-correlacaoitemnbsindopcclasstrib_ibscbs_v1-01-00.xlsx",
+        "versao_da_fonte": "Anexo VIII v1.01.00",
+        "linhas": 980,
+        "como_conferir": "Duas conferencias: (1) abrir a pagina RTC e conferir se o Anexo VIII continua na versao 1.01.00; versao nova: tratar todas as NBS da copia como nao conferidas. (2) abrir a tabela oficial NBS 2.0 do MDIC (fonte 'nbs-oficial') e conferir se a NBS escolhida existe com a mesma descricao; ausente ou diferente: 'Nao indicado'.",
+        "cruzamento_com_nbs_oficial": "Em 2026-10-14, as 980 NBS da copia existiam na tabela oficial NBS 2.0 (arquivo atualizado em 03/07/2025), com a mesma descricao.",
+        "observacao": "As colunas de cIndOp e cClassTrib do Anexo VIII nao foram copiadas. Elas tratam do mercado interno em geral e nao definem os codigos do MEI."
+      }
+    ]
+  },
+  "fontes": [
+    {
+      "id": "nfse-rtc",
+      "nome": "Portal NFS-e - Documentacao tecnica RTC (notas tecnicas e anexos)",
+      "tipo": "oficial",
+      "prioridade": "alta",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc",
+      "registrado": {
+        "pagina_atualizada_em": "2026-10-02",
+        "nota_tecnica_mais_recente": "NT SE/CGNFS-e 010 v1.00 (NFS-e Via e evento de manifestacao do adquirente)",
+        "nota_tecnica_do_leiaute_dps": "NT SE/CGNFS-e 009 v1.01",
+        "anexo_vi": "AnexoVI-LeiautesRN_RTC_IBSCBS-v1.04.01",
+        "anexo_vii": "AnexoVII-IndOp_IBSCBS_v1.03.00",
+        "anexo_viii": "AnexoVIII v1.01.00"
+      },
+      "marcadores_de_versao": [
+        "Atualizado em 02/10/2026",
+        "nº 010 versão 1.00",
+        "nº 009 versão 1.01",
+        "v1-04-01",
+        "v1-03-00",
+        "AnexoVIII versão 1.01.00"
+      ],
+      "sinais_de_mudanca": [
+        "Nota Técnica com número maior que 010",
+        "Nova versão da NT 009 ou da NT 010",
+        "Anexo VI, VII ou VIII com versão diferente da registrada",
+        "Data de atualização da página posterior a 02/10/2026"
+      ],
+      "secoes_afetadas": ["1.1", "4.2", "4.3", "4.4", "4.6", "4.7", "5.2", "5.3", "6"]
+    },
+    {
+      "id": "nfse-implantacoes",
+      "nome": "Portal NFS-e - Atualizacoes e Implantacoes (o que esta em producao)",
+      "tipo": "oficial",
+      "prioridade": "alta",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/atualizacoes-e-implantacoes",
+      "registrado": {
+        "pagina_atualizada_em": "2026-08-11",
+        "ultima_implantacao_em_producao": "10/08/2026 - Emissor Nacional Web com destaque de IBS/CBS (NT 004)"
+      },
+      "marcadores_de_versao": ["Atualizado em 11/08/2026", "10/08/2026"],
+      "sinais_de_mudanca": [
+        "Nova linha de produção com data posterior a 10/08/2026",
+        "Menção a 'NT 009' ou 'NT009' em produção (muda a regra do cIndOp com CST 410)"
+      ],
+      "secoes_afetadas": ["1.2", "4.6", "5.2", "6"]
+    },
+    {
+      "id": "tabela-cclasstrib",
+      "nome": "Tabela CST e cClassTrib do IBS/CBS (ambiente nacional de documentos fiscais, SVRS)",
+      "tipo": "oficial",
+      "prioridade": "alta",
+      "url": "https://dfe-portal.svrs.rs.gov.br/DFE/TabelaClassificacaoTributaria",
+      "url_alternativa": "https://consumo.tributos.gov.br/servico/calcular-tributos-consumo/calculadora/classificacoestributarias",
+      "registrado": {
+        "versao": "Informe Técnico 2025.002 v1.60 (23/06/2026). Fonte nao oficial cita v1.70; versao nao confirmada em pagina oficial",
+        "observacao": "A pagina SVRS mostra os codigos em texto, mas nao mostra a versao. A calculadora carrega o conteudo depois de abrir e aparece vazia na leitura automatica."
+      },
+      "marcadores_de_versao": [
+        "410004 - Exportações de bens e serviços",
+        "410027 - Exportação de serviço ou de bem imaterial"
+      ],
+      "sinais_de_mudanca": [
+        "Descrição diferente da registrada para os códigos 410004 ou 410027",
+        "Aviso de revogação ou fim de vigência dos códigos 410004 ou 410027"
+      ],
+      "secoes_afetadas": ["5.3", "6"]
+    },
+    {
+      "id": "lc-214",
+      "nome": "LC 214/2025 - IBS e CBS (texto compilado)",
+      "tipo": "oficial",
+      "prioridade": "alta",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+      "registrado": {
+        "ultima_alteracao_conhecida": "LC 235/2026 (27/08/2026)",
+        "artigos_usados": ["8", "11", "12", "26", "41", "79", "80"]
+      },
+      "marcadores_de_versao": ["Lei Complementar nº 235, de 2026"],
+      "sinais_de_mudanca": [
+        "Menção a Lei Complementar com número maior que 235 de 2026",
+        "Nova redação nos arts. 11 ou 80"
+      ],
+      "secoes_afetadas": ["5.1", "5.2", "6"]
+    },
+    {
+      "id": "lc-123",
+      "nome": "LC 123/2006 - Simples Nacional e MEI (texto compilado)",
+      "tipo": "oficial",
+      "prioridade": "alta",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm",
+      "registrado": {
+        "limite_mei": "R$ 81.000,00 (art. 18-A, § 1º)",
+        "artigos_usados": ["18-A", "21, § 4º, IV"]
+      },
+      "marcadores_de_versao": ["81.000,00"],
+      "sinais_de_mudanca": ["Valor do limite do art. 18-A diferente de R$ 81.000,00"],
+      "secoes_afetadas": ["3.1", "3.3"]
+    },
+    {
+      "id": "res-cgsn",
+      "nome": "Resoluções do CGSN (Res. 140/2018 e alterações)",
+      "tipo": "oficial",
+      "prioridade": "media",
+      "url": "http://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action",
+      "registrado": {
+        "ultima_resolucao_conhecida": "Res. CGSN 191/2026 (DOU 10/08/2026)",
+        "artigos_usados": ["40-C", "40-D", "101", "103", "106", "106-A"],
+        "observacao": "A URL abre uma pagina de busca, sem lista de normas. Conferir manualmente na manutencao."
+      },
+      "marcadores_de_versao": ["Resolução CGSN nº 191"],
+      "sinais_de_mudanca": ["Resolução CGSN com número maior que 191"],
+      "secoes_afetadas": ["2", "3.2", "3.3", "7"]
+    },
+    {
+      "id": "ato-conjunto-cronograma",
+      "nome": "Atos conjuntos RFB/CGIBS (cronograma de obrigatoriedade de IBS/CBS nos documentos fiscais)",
+      "tipo": "oficial",
+      "prioridade": "media",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/reforma-tributaria",
+      "registrado": {
+        "ato_vigente": "Ato Conjunto RFB/CGIBS nº 4/2026 (DOU 31/07/2026)",
+        "observacao": "A pagina nao cita o Ato Conjunto nº 4 em leitura automatica. Conferir manualmente na manutencao."
+      },
+      "marcadores_de_versao": ["Ato Conjunto RFB/CGIBS nº 4"],
+      "sinais_de_mudanca": [
+        "Ato Conjunto RFB/CGIBS com número maior que 4",
+        "Novo Ato Técnico Conjunto que altere prazos ou rejeições para o Simples Nacional"
+      ],
+      "secoes_afetadas": ["2", "4.6"]
+    },
+    {
+      "id": "lista-servicos",
+      "nome": "Portal NFS-e - Lista de Códigos de Tributação Nacional",
+      "tipo": "oficial",
+      "prioridade": "media",
+      "uso": "Passo 4, itens 2 e 4 (conferencia do codigo da copia)",
+      "url": "https://www.gov.br/nfse/pt-br/mei-e-demais-empresas/codigos-de-tributacao-nacional-nbs",
+      "registrado": { "pagina_atualizada_em": "2024-08-20", "formato": "Lista em texto na pagina, com codigos de 6 numeros", "copia": "references/tabelas/codigos-tributacao-nacional.csv" },
+      "marcadores_de_versao": ["Atualizado em 20/08/2024"],
+      "sinais_de_mudanca": ["Data de atualização posterior a 20/08/2024"],
+      "secoes_afetadas": ["4.4"]
+    },
+    {
+      "id": "anexo-viii",
+      "nome": "Anexo VIII - Correlacao entre item da lista, NBS, cClassTrib e cIndOp (nao normativo)",
+      "tipo": "oficial",
+      "prioridade": "media",
+      "uso": "Passo 4, itens 3 e 4 (conferencia da versao da copia)",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexoviii-correlacaoitemnbsindopcclasstrib_ibscbs_v1-01-00.xlsx",
+      "registrado": { "versao": "1.01.00", "copia": "references/tabelas/anexo-viii-item-nbs.csv" },
+      "marcadores_de_versao": [],
+      "sinais_de_mudanca": ["Nova versão do Anexo VIII na página RTC"],
+      "secoes_afetadas": ["4.4"]
+    },
+    {
+      "id": "nbs-oficial",
+      "nome": "Tabela oficial NBS 2.0 (MDIC), em CSV",
+      "tipo": "oficial",
+      "prioridade": "media",
+      "uso": "Passo 4, item 4 (conferencia da NBS escolhida)",
+      "url": "https://www.gov.br/mdic/pt-br/assuntos/sdic/comercio-e-servicos/nbs-nomenclatura-brasileira-de-servicos/arquivos/nbs2-0.csv",
+      "url_pagina": "https://www.gov.br/mdic/pt-br/assuntos/sdic/comercio-e-servicos/nbs-nomenclatura-brasileira-de-servicos/arquivos/nbs2-0.csv/view",
+      "registrado": {
+        "arquivo_atualizado_em": "2025-07-03",
+        "linhas": 1238,
+        "observacao": "Arquivo em texto, separado por ponto e virgula, com acentos em codificacao antiga (CP1252). A pagina do arquivo mostra a data de atualizacao."
+      },
+      "marcadores_de_versao": ["Atualizado em 03/07/2025"],
+      "sinais_de_mudanca": ["Data de atualização do arquivo posterior a 03/07/2025"],
+      "secoes_afetadas": ["4.4"]
+    },
+    {
+      "id": "lc-116",
+      "nome": "LC 116/2003 - ISS (texto compilado)",
+      "tipo": "oficial",
+      "prioridade": "media",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp116.htm",
+      "registrado": { "artigos_usados": ["2º, I e parágrafo único"] },
+      "marcadores_de_versao": [],
+      "sinais_de_mudanca": ["Nova redação do art. 2º"],
+      "secoes_afetadas": ["5.1"]
+    },
+    {
+      "id": "nfse-legislacao-mei",
+      "nome": "Portal NFS-e - Legislação aplicável ao MEI",
+      "tipo": "oficial",
+      "prioridade": "media",
+      "url": "https://www.gov.br/nfse/pt-br/biblioteca/legislacao-aplicavel-ao-mei",
+      "registrado": { "pagina_atualizada_em": "2023-10-31" },
+      "marcadores_de_versao": ["Atualizado em 31/10/2023"],
+      "sinais_de_mudanca": ["Data de atualização posterior a 31/10/2023"],
+      "secoes_afetadas": ["2", "3.2"]
+    },
+    {
+      "id": "ocupacoes-mei",
+      "nome": "Ocupações permitidas ao MEI (Anexo XI da Res. CGSN 140/2018)",
+      "tipo": "oficial",
+      "prioridade": "media",
+      "uso": "Passo 2",
+      "url": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor",
+      "registrado": { "observacao": "Lista não baixada nesta versão da base. Sem web, o Passo 2 usa a ocupação do CCMEI informada pelo MEI." },
+      "marcadores_de_versao": [],
+      "sinais_de_mudanca": ["Nova resolução do CGSN alterando o Anexo XI"],
+      "secoes_afetadas": ["3.1"]
+    }
+  ],
+  "datas_gatilho": [
+    {
+      "data": "2026-11-01",
+      "evento": "NFS-e nacional obrigatória para ME/EPP do Simples (Res. CGSN 191/2026).",
+      "acao": "Sem efeito direto para o MEI. Manter apenas como contexto."
+    },
+    {
+      "data": "2027-01-01",
+      "evento": "Campos de IBS/CBS obrigatórios para optantes do Simples, inclusive MEI (Ato Conjunto RFB/CGIBS nº 4/2026). Nota obrigatória em todas as prestações do MEI e IBS/CBS no valor fixo do Simei (Res. CGSN 190/2026).",
+      "acao": "Continuar orientando 'Sim' no preenchimento de IBS/CBS, agora por obrigação. Tratar CST e cClassTrib de operações internas como lacuna crítica até nova fonte oficial. Revisar as seções 2, 3.2, 3.3, 4.6 e 7."
+    }
+  ],
+  "pendencias_de_fonte_oficial": [
+    { "item": "Valores de IBS/CBS do Simei (Anexo XIII da Res. CGSN 140/2018)", "marca": "SEM FONTE OFICIAL", "onde_verificar": "Res. CGSN 190/2026, Anexo XIII (DOU 10/08/2026)" },
+    { "item": "Limite do MEI transportador autônomo de cargas", "marca": "SEM FONTE OFICIAL", "onde_verificar": "LC 123/2006 (Planalto)" },
+    { "item": "Obrigatoriedade da emissão completa na exportação", "marca": "SEM FONTE OFICIAL", "onde_verificar": "Manual do Emissor Nacional (Portal NFS-e, Links com Passo a Passo)" },
+    { "item": "Regra E1301 (local de incidência com tribISSQN 2, 3 ou 4)", "marca": "CONFIRMAR NO ANEXO VI", "onde_verificar": "Anexo VI vigente, aba de regras de negócio" },
+    { "item": "Rejeição por NBS ausente em exportação", "marca": "CONFIRMAR NO ANEXO VI", "onde_verificar": "Anexo VI vigente, aba de regras de negócio" },
+    { "item": "Código 3 de tribISSQN para exportação", "marca": "CONFIRMAR NO ANEXO VI", "onde_verificar": "Anexo VI vigente, leiaute da DPS" },
+    { "item": "cIndOp na exportação: o Anexo VII v1.03.00 não tem indicador próprio; 100301 foi aceito pelo Emissor no Caso 1", "marca": "CONFIRMAR NO ANEXO VII", "onde_verificar": "Próxima versão do Anexo VII ou regra de validação do Anexo VI" },
+    { "item": "Versão vigente do Informe Técnico 2025.002 (v1.60 registrada; v1.70 citada em fonte não oficial)", "marca": "CONFIRMAR", "onde_verificar": "Portal Nacional da NF-e, Documentos > Diversos" },
+    { "item": "CST e cClassTrib do MEI no mercado interno", "marca": "LACUNA", "onde_verificar": "Res. CGSN, notas técnicas da NFS-e e informes técnicos futuros" }
+  ],
+  "historico": [
+    { "data": "2026-10-14", "alteracao": "Criação da base e do manifesto." },
+    { "data": "2026-10-14", "alteracao": "Auditoria e correções: tabela cIndOp conferida no Anexo VII oficial v1.03.00; NT 010 registrada; fonte da tabela cClassTrib trocada para a página SVRS; fontes sem leitura automática rebaixadas para prioridade média; regra de marcador ausente passa a 'não verificada'; listas do Passo 4 registradas." },
+    { "data": "2026-10-14", "alteracao": "Ajustes após testes no Gemini e no Claude Chat: perguntas reduzidas a 4 (cobrança presumida, ocupação do CCMEI virou alerta); pergunta sobre quem usou o serviço e moeda passaram a ser obrigatórias; Passo 0 passa a mostrar as fontes abertas; proibido generalizar o caso de referência." },
+    { "data": "2026-10-14", "alteracao": "Tabelas oficiais incorporadas em references/tabelas (Códigos de Tributação Nacional e Anexo VIII item x NBS), com conferência obrigatória do código na fonte oficial; códigos em título H3 com negrito na saída; exemplo de verificação sem texto copiável; pergunta sobre quem usou obrigatória com quem pagou no exterior; regras para perguntas depois da resposta." },
+    { "data": "2026-10-14", "alteracao": "Ajustes após o terceiro teste: moeda perguntada de novo quando faltar; abertura obrigatória com os fatos já informados; perguntas numeradas a partir de 1 na mensagem; respostas do MEI copiadas sem hipóteses; bloco Atenção limitado a 2 alertas fixos e 3 do caso, com linha Outras observações; exemplo de subcontratação na pergunta sobre quem usou; alerta de regra não conferida marcado." },
+    { "data": "2026-10-14", "alteracao": "Exemplos neutros e fictícios, sem códigos reais; Caso 1 sem códigos de serviço; regra contra copiar códigos de exemplos; tabela oficial NBS 2.0 do MDIC registrada e incluída na conferência da NBS; cruzamento das 980 NBS do Anexo VIII com a tabela oficial sem divergências." }
+  ]
+}
