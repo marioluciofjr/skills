@@ -1,5 +1,5 @@
 ---
-name: "image-to-gif"
+name: image-to-gif
 description: "Anima elementos de uma imagem enviada (setas tracejadas andando, setas piscando no sentido em que apontam, cards se iluminando, destaques) e entrega um arquivo GIF em loop infinito, preservando o resto da imagem pixel a pixel. Opcionalmente traduz os textos da imagem antes de animar. Use sempre que a pessoa enviar uma imagem (diagrama, fluxograma, infográfico, card) e pedir um gif, gif animado ou alguma animação nela, como 'faz as setas andarem', 'setas piscando e cards acendendo', 'transforma essa imagem em gif' ou 'anima e traduz para o português'."
 metadata:
   author: "Mário Lúcio"
