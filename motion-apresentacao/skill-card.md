@@ -3,8 +3,8 @@ Cria apresentações em motion estilo lançamento de app (HTML 1920x1080 com GSA
 
 This skill is ready for commercial/non-commercial use. <br>
 
-## Third-Party Community Consideration
-<span style="color:#d73a49">This skill is not owned or developed by NVIDIA. This skill has been developed and built to a third-party's requirements for this application and use case; see link to Non-NVIDIA [Mário Lúcio Agent Card](https://github.com/marioluciofjr/skills).</span> <!-- VERIFY: A skill não tem campo author no frontmatter; dono inferido pelo contexto (pasta de criação de skills do Mário) e link aponta para o repositório onde a rotina-pos-skill publica as skills. Confirmar antes de publicar. --> <br>
+## Autoria
+<span style="color:#d73a49">Skill desenvolvida por Mário Lúcio; veja o repositório [Mário Lúcio Agent Card](https://github.com/marioluciofjr/skills).</span> <!-- VERIFY: A skill não tem campo author no frontmatter; dono inferido pelo contexto (pasta de criação de skills do Mário) e link aponta para o repositório onde a rotina-pos-skill publica as skills. Confirmar antes de publicar. --> <br>
 
 ### License/Terms of Use: <br>
 ## Use Case: <br>

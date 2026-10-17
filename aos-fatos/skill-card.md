@@ -3,8 +3,8 @@ Skill para buscar e comentar as checagens de fatos mais recentes do portal Aos F
 
 This skill is ready for commercial/non-commercial use. <br>
 
-## Third-Party Community Consideration
-<span style="color:#d73a49">This skill is not owned or developed by NVIDIA. This skill has been developed and built to a third-party's requirements for this application and use case; see link to Non-NVIDIA [Mário Lúcio Agent Card](https://github.com/marioluciofjr/skills).</span> <!-- VERIFY: Owner extraído do campo 'author' do frontmatter do SKILL.md. O link aponta para o repositório GitHub onde o autor publica suas skills (fluxo padrão da rotina-pos-skill), não um card de agente dedicado — confirmar se é a referência correta antes de publicar. --> <br>
+## Autoria
+<span style="color:#d73a49">Skill desenvolvida por Mário Lúcio; veja o repositório [Mário Lúcio Agent Card](https://github.com/marioluciofjr/skills).</span> <!-- VERIFY: Owner extraído do campo 'author' do frontmatter do SKILL.md. O link aponta para o repositório GitHub onde o autor publica suas skills (fluxo padrão da rotina-pos-skill), não um card de agente dedicado — confirmar se é a referência correta antes de publicar. --> <br>
 
 ### License/Terms of Use: <br>
 ## Use Case: <br>

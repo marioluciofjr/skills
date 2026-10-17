@@ -6,9 +6,9 @@ Audita textos ou URLs de posts publicados segundo os parâmetros de E-E-A-T (Exp
 
 Esta skill está pronta para uso comercial e não comercial.
 
-## Third-Party Community Consideration
+## Autoria
 
-Esta skill não pertence à NVIDIA nem foi desenvolvida por ela. Ela foi criada por Mário Lúcio para este caso de uso específico, e é distribuída sem agent card de terceiro associado.
+Skill desenvolvida por Mário Lúcio; veja o repositório [Mário Lúcio Agent Card](https://github.com/marioluciofjr/skills).
 
 ### License / Terms of Use
 

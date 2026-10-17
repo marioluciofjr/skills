@@ -3,8 +3,8 @@ Resolve um link de episodio do Spotify para a URL direta do arquivo de audio pub
 
 This skill is for research and development only. <br>
 
-## Third-Party Community Consideration
-This skill is not owned or developed by NVIDIA. This skill has been developed and built to a third-party's requirements for this application and use case; see link to Non-NVIDIA [Mario Agent Card](Nao publicado — skill criada localmente, sem card de terceiro associado.). <br>
+## Autoria
+Skill desenvolvida por Mario; veja o repositório [Mario Agent Card](Nao publicado — skill criada localmente, sem card de terceiro associado.). <br>
 
 ### License/Terms of Use: <br>
 CC-BY-4.0 <br>

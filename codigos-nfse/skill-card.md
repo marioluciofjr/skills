@@ -3,8 +3,8 @@ Orienta o MEI (Microempreendedor Individual) a preencher os códigos da emissão
 
 This skill is ready for commercial/non-commercial use. <br>
 
-## Third-Party Community Consideration
-This skill is not owned or developed by NVIDIA. This skill has been developed and built to a third-party's requirements for this application and use case; see link to Non-NVIDIA [Mário Lúcio Agent Card](https://github.com/marioluciofjr/skills). <br>
+## Autoria
+Skill desenvolvida por Mário Lúcio; veja o repositório [Mário Lúcio Agent Card](https://github.com/marioluciofjr/skills). <br>
 
 ### License/Terms of Use: <br>
 <span style="color:#d73a49">Apache 2.0</span> <!-- VERIFY: Licença herdada do repositório marioluciofjr/skills, onde a skill será publicada; a pasta da skill não tem arquivo LICENSE próprio. Confirmar antes de publicar. --> <br>

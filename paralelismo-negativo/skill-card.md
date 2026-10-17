@@ -3,8 +3,8 @@ Diagnostica e corrige o paralelismo negativo (o vício de escrita "não é X, é
 
 This skill is ready for commercial/non-commercial use. <br>
 
-## Owner
-Mário Lúcio — skill pessoal, sem vínculo com a NVIDIA ou qualquer terceiro corporativo. <br>
+## Autoria
+Skill desenvolvida por Mário Lúcio; veja o repositório [Mário Lúcio Agent Card](https://github.com/marioluciofjr/skills). <br>
 
 ### License/Terms of Use: <br>
 Nenhuma licença formal definida (skill de uso pessoal, não distribuída sob licença de código aberto). <br>

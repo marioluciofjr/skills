@@ -3,8 +3,8 @@ Aplica o padrão PZCT-PTS100 (Português Técnico Simplificado) a textos objetiv
 
 This skill is ready for commercial/non-commercial use. <br>
 
-## Owner
-Mário Lúcio — skill pessoal, sem vínculo com a NVIDIA ou qualquer terceiro corporativo. Mais sobre o autor em [prazocerto.me/sobre.md](https://prazocerto.me/sobre.md). <br>
+## Autoria
+Skill desenvolvida por Mário Lúcio; veja o repositório [Mário Lúcio Agent Card](https://github.com/marioluciofjr/skills). Mais sobre o autor em [prazocerto.me/sobre.md](https://prazocerto.me/sobre.md). <br>
 
 ### License/Terms of Use: <br>
 Nenhuma licença formal definida (skill de uso pessoal, não distribuída sob licença de código aberto). <br>
