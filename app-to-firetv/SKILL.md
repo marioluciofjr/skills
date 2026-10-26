@@ -96,7 +96,7 @@ python <SKILL>/scripts/firetv_build.py empacotar --dir <W> --slug <slug> --versa
 Em atualizações, acrescente `--version-code-anterior <n>` e `--cert-anterior <SHA-256 da versão anterior>`. Critérios de aceite, todos obrigatórios (o JSON precisa vir com `success: true`):
 
 - `zipalign verified` e `signature verified [v1, v2, v3]`;
-- package, `versionCode`, `LEANBACK_LAUNCHER`, ícone e banner conferidos no APK final;
+- package, `versionCode`, `LEANBACK_LAUNCHER`, ícone, banner e as duas classes Java (`MainActivity` e `MainActivity$Client`) conferidos no APK final;
 - `index.html` empacotado idêntico ao do projeto;
 - em atualizações, `versionCode` maior que o anterior e o mesmo certificado.
 

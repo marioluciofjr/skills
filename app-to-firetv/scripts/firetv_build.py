@@ -254,7 +254,9 @@ class ProjetoApktool:
             "apktool.yml.tpl": "apktool.yml",
             "strings.xml.tpl": "res/values/strings.xml",
             "MainActivity.smali.tpl": f"smali/{pkgpath}/MainActivity.smali",
-            "MainActivity$Client.smali.tpl": f"smali/{pkgpath}/MainActivity$Client.smali",
+            # O modelo não usa "$" no nome (o claude.ai recusa esse caractere no zip da skill),
+            # mas o arquivo gerado precisa do "$": é o nome da classe interna no Android
+            "MainActivity_Client.smali.tpl": f"smali/{pkgpath}/MainActivity$Client.smali",
         }
         for modelo, destino in arquivos.items():
             self._escrever(PASTA_ASSETS / modelo, self.proj / destino, trocas)
@@ -389,7 +391,8 @@ class VerificadorApk:
         crit = {}
         with tempfile.TemporaryDirectory() as tmp:
             dec = Path(tmp) / "dec"
-            subprocess.run(["java", "-jar", str(self.tc.caminho("apktool")), "d", "-f", "-s", str(apk), "-o", str(dec)],
+            # Decompila o APK inteiro (inclusive o código) para conferir o que foi realmente empacotado
+            subprocess.run(["java", "-jar", str(self.tc.caminho("apktool")), "d", "-f", str(apk), "-o", str(dec)],
                            check=True, capture_output=True)
             manifesto = (dec / "AndroidManifest.xml").read_text(encoding="utf-8")
             yml = (dec / "apktool.yml").read_text(encoding="utf-8")
@@ -402,6 +405,10 @@ class VerificadorApk:
             crit["leanback_launcher"] = "LEANBACK_LAUNCHER" in manifesto
             crit["icone_e_banner"] = all((dec / "res" / p).is_file() for p in
                                          ("mipmap-xhdpi/ic_launcher.png", "mipmap-xxxhdpi/ic_launcher.png", "drawable-xhdpi/banner.png"))
+            # As duas classes precisam existir no APK; sem a Client, o app fecha ao abrir
+            pasta_classes = dec / "smali" / app.pkg.replace(".", "/")
+            crit["classes_java"] = all((pasta_classes / nome).is_file()
+                                       for nome in ("MainActivity.smali", "MainActivity$Client.smali"))
         with zipfile.ZipFile(apk) as z:
             crit["index_html_identico"] = z.read("assets/index.html") == (self.proj / "assets" / "index.html").read_bytes()
         cert = self._sha256_certificado(apk)
