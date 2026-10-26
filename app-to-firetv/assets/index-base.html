@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>__APP_NAME__</title>
+<style>
+  /* Tokens do design system: troque estes valores pelos do design system escolhido */
+  :root { --bg:#0a0f1a; --panel:#121a2b; --line:#24324f; --accent:#f5b942; --accent-glow:rgba(245,185,66,.6);
+          --text:#f1f5f9; --muted:#94a3b8; --radius:20px; }
+  * { box-sizing:border-box; margin:0; padding:0; user-select:none; outline:none; }
+  html,body { width:100%; height:100%; overflow:hidden; background:var(--bg); color:var(--text);
+              font-family:'Amazon Ember',Roboto,'Segoe UI',sans-serif; }
+  /* Palco fixo de 1720x960, escalado por fitStage() para caber na área segura */
+  #stage { position:absolute; left:50%; top:50%; width:1720px; height:960px; transform-origin:50% 50%; }
+  header { height:120px; display:flex; align-items:center; justify-content:space-between; padding:0 24px; }
+  header h1 { font-size:44px; }
+  header .sub { font-size:22px; color:var(--muted); }
+  #grid { display:grid; grid-template-columns:repeat(4,1fr); gap:28px; padding:24px; }
+  .card { height:220px; background:var(--panel); border:5px solid var(--line); border-radius:var(--radius);
+          display:flex; flex-direction:column; justify-content:center; align-items:center; gap:12px;
+          font-size:30px; transition:transform .15s, box-shadow .15s, border-color .15s; }
+  .card small { font-size:20px; color:var(--muted); }
+  .focusable.focus { border-color:var(--accent)!important; box-shadow:0 0 22px var(--accent-glow); transform:scale(1.04); }
+  #menu { position:absolute; top:0; right:0; width:520px; height:960px; background:var(--panel);
+          border-left:3px solid var(--line); padding:48px 32px; display:none; flex-direction:column; gap:20px; }
+  #menu.on { display:flex; }
+  #menu h2 { font-size:34px; margin-bottom:12px; }
+  .item { min-height:80px; border:5px solid var(--line); border-radius:16px; padding:0 24px;
+          display:flex; align-items:center; justify-content:space-between; font-size:26px; }
+  .item span { color:var(--muted); }
+  #help { position:absolute; left:0; bottom:0; width:1720px; height:72px; border-top:2px solid var(--line);
+          display:flex; align-items:center; gap:40px; padding:0 32px; font-size:22px; color:var(--muted); }
+  #help b { color:var(--text); border:2px solid var(--line); border-radius:10px; padding:2px 12px; margin-right:8px; }
+  .modal-bg { position:fixed; inset:0; background:rgba(5,8,15,.78); display:none; align-items:center; justify-content:center; z-index:50; }
+  .modal-bg.on { display:flex; }
+  .modal { transform:scale(var(--s,.5)); background:var(--panel); border:3px solid var(--accent); border-radius:28px;
+           padding:40px 48px; text-align:center; min-width:620px; }
+  .modal h2 { font-size:36px; margin-bottom:16px; } .modal p { font-size:24px; color:var(--muted); margin-bottom:28px; }
+  .modal .acoes { display:flex; gap:24px; justify-content:center; }
+  .btn { min-width:220px; height:76px; border:5px solid var(--line); border-radius:16px; background:var(--bg);
+         color:var(--text); font-size:26px; display:flex; align-items:center; justify-content:center; }
+  .toast { position:fixed; left:50%; bottom:15%; transform:translateX(-50%) scale(var(--s,.5)); transform-origin:50% 100%;
+           opacity:0; transition:opacity .25s; z-index:60; background:rgba(10,15,26,.95); border:2px solid var(--accent);
+           border-radius:16px; padding:14px 30px; font-size:22px; white-space:nowrap; }
+  .toast.on { opacity:1; }
+</style></head>
+<body>
+<div id="stage">
+  <header><h1>__APP_NAME__</h1><div class="sub" id="status">Pronto</div></header>
+  <div id="grid"></div>
+  <div id="menu"><h2>Menu</h2><div id="menuItems"></div></div>
+  <div id="help"></div>
+</div>
+<div id="modalBg" class="modal-bg"><div class="modal"><h2 id="mTitle"></h2><p id="mText"></p><div class="acoes" id="mActions"></div></div></div>
+<div id="toast" class="toast"></div>
+<script>
+(function(){
+  'use strict';
+  // U+FE0E (seletor de texto) impede que glifos como ☰ e ⏯ virem emoji colorido na TV
+  const T = '︎';
+  const KEY = '__PKG__.state';
+  const MARGINS = [0,3,5,8,10];
+  const state = Object.assign({ marginIdx:2, sons:true, foco:0, itens:[] }, load() || {});
+  const $ = id => document.getElementById(id);
+
+  /* ---------- Escala do palco e área segura contra overscan ---------- */
+  function fitStage(){
+    const m = MARGINS[state.marginIdx] / 100;
+    const s = Math.min(innerWidth*(1-2*m)/1720, innerHeight*(1-2*m)/960);
+    $('stage').style.transform = 'translate(-50%,-50%) scale(' + s + ')';
+    document.documentElement.style.setProperty('--s', s);
+  }
+  addEventListener('resize', fitStage);
+
+  /* ---------- Persistência (sempre em try/catch) ---------- */
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e) {} }
+  function load(){ try { return JSON.parse(localStorage.getItem(KEY) || 'null'); } catch(e) { return null; } }
+
+  /* ---------- Retorno imediato: toast e som curto ---------- */
+  let toastT;
+  function toast(msg){ const t=$('toast'); t.textContent=msg; t.classList.add('on'); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('on'),2200); }
+  let audio;
+  function bip(freq){
+    if (!state.sons) return;
+    try { audio = audio || new (window.AudioContext||window.webkitAudioContext)();
+      const o=audio.createOscillator(), g=audio.createGain(); o.frequency.value=freq||660; g.gain.value=.05;
+      o.connect(g); g.connect(audio.destination); o.start(); o.stop(audio.currentTime+.08); } catch(e) {}
+  }
+
+  /* ---------- Conteúdo de exemplo: troque pelo conteúdo do app ---------- */
+  const CARDS = ['Item 1','Item 2','Item 3','Item 4','Item 5','Item 6','Item 7','Item 8'];
+  function renderGrid(){
+    $('grid').innerHTML = CARDS.map((c,i) => '<div class="card focusable" data-zone="main" data-i="'+i+'">'+c+'<small>OK para abrir</small></div>').join('');
+  }
+  function menuItens(){
+    return [
+      { rotulo:'Margem da tela', valor:MARGINS[state.marginIdx]+'%', acao:()=>{ state.marginIdx=(state.marginIdx+1)%MARGINS.length; fitStage(); } },
+      { rotulo:'Sons', valor: state.sons ? 'Ligados' : 'Desligados', acao:()=>{ state.sons=!state.sons; } },
+      { rotulo:'Sair', valor:'', acao:confirmarSaida }
+    ];
+  }
+  function renderMenu(){
+    $('menuItems').innerHTML = menuItens().map((m,i) => '<div class="item focusable" data-zone="menu" data-i="'+i+'">'+m.rotulo+'<span>'+m.valor+'</span></div>').join('');
+  }
+  function renderHelp(){
+    const dicas = { main:[['OK','Abrir'],['☰'+T,'Menu'],['↩'+T,'Sair']],
+                    menu:[['OK','Alterar'],['↩'+T,'Voltar']],
+                    modal:[['← →','Escolher'],['OK','Confirmar'],['↩'+T,'Cancelar']] }[zona];
+    $('help').innerHTML = dicas.map(d => '<div><b>'+d[0]+'</b>'+d[1]+'</div>').join('');
+  }
+
+  /* ---------- Modelo de zonas de foco ---------- */
+  let zona = 'main', idx = { main: Math.min(state.foco, CARDS.length-1), menu:0, modal:0 };
+  function alvos(){ return Array.from(document.querySelectorAll('.focusable[data-zone="'+zona+'"]')); }
+  function pintarFoco(){
+    document.querySelectorAll('.focusable.focus').forEach(e => e.classList.remove('focus'));
+    const lista = alvos(); if (!lista.length) return;
+    idx[zona] = Math.max(0, Math.min(idx[zona], lista.length-1));
+    lista[idx[zona]].classList.add('focus');
+    renderHelp();
+  }
+  // Move o foco para o vizinho mais próximo na direção pedida (funciona com grades e listas)
+  function mover(dx, dy){
+    const lista = alvos(), atual = lista[idx[zona]]; if (!atual) return false;
+    const a = atual.getBoundingClientRect(), ca = { x:a.left+a.width/2, y:a.top+a.height/2 };
+    let melhor = -1, menor = Infinity;
+    lista.forEach((el,i) => {
+      if (i === idx[zona]) return;
+      const r = el.getBoundingClientRect(), vx = r.left+r.width/2-ca.x, vy = r.top+r.height/2-ca.y;
+      if ((dx && Math.sign(vx)!==dx) || (dy && Math.sign(vy)!==dy)) return;
+      const d = Math.abs(dx ? vx : vy) + 2*Math.abs(dx ? vy : vx);
+      if (d < menor) { menor = d; melhor = i; }
+    });
+    if (melhor < 0) return false;
+    idx[zona] = melhor; pintarFoco(); bip(520); return true;
+  }
+  function abrirMenu(){ renderMenu(); $('menu').classList.add('on'); zona='menu'; idx.menu=0; pintarFoco(); }
+  function fecharMenu(){ $('menu').classList.remove('on'); zona='main'; pintarFoco(); }
+
+  /* ---------- Modal de confirmação: foco inicial em "Cancelar" ---------- */
+  let modalAcoes = [];
+  function modal(titulo, texto, acoes){
+    $('mTitle').textContent = titulo; $('mText').textContent = texto; modalAcoes = acoes;
+    $('mActions').innerHTML = acoes.map((a,i) => '<div class="btn focusable" data-zone="modal" data-i="'+i+'">'+a.rotulo+'</div>').join('');
+    $('modalBg').classList.add('on'); zona='modal'; idx.modal=0; pintarFoco();
+  }
+  function fecharModal(){ $('modalBg').classList.remove('on'); zona = $('menu').classList.contains('on') ? 'menu' : 'main'; pintarFoco(); }
+  function confirmarSaida(){
+    modal('Sair do app?', 'Seu progresso fica salvo.', [
+      { rotulo:'Cancelar', acao:fecharModal },
+      { rotulo:'Sair', acao:()=>{ save(); window.location.href = '__SCHEME__://sair'; } }
+    ]);
+  }
+
+  /* ---------- Ponto único de entrada das teclas do controle ---------- */
+  window.fireTvKey = function(action){
+    if (zona === 'modal') {
+      if (action==='LEFT') mover(-1,0); else if (action==='RIGHT') mover(1,0);
+      else if (action==='SELECT') modalAcoes[idx.modal].acao();
+      else if (action==='BACK') fecharModal();
+      return;
+    }
+    if (action==='MENU') { $('menu').classList.contains('on') ? fecharMenu() : abrirMenu(); return; }
+    if (zona === 'menu') {
+      if (action==='UP') mover(0,-1); else if (action==='DOWN') mover(0,1);
+      else if (action==='LEFT' || action==='BACK') fecharMenu();
+      else if (action==='SELECT') { menuItens()[idx.menu].acao(); save(); renderMenu(); pintarFoco(); }
+      return;
+    }
+    const mapa = { UP:[0,-1], DOWN:[0,1], LEFT:[-1,0], RIGHT:[1,0] };
+    if (mapa[action]) {
+      // Chegar à borda direita leva à zona vizinha (menu); nas outras bordas, aviso imediato
+      if (!mover(mapa[action][0], mapa[action][1])) { if (action==='RIGHT') abrirMenu(); else { bip(220); toast('Fim da lista'); } }
+      state.foco = idx.main; save(); return;
+    }
+    if (action==='SELECT' || action==='PLAY_PAUSE') { bip(880); $('status').textContent = CARDS[idx.main] + ' selecionado'; toast(CARDS[idx.main]); return; }
+    if (action==='BACK') { confirmarSaida(); return; }
+    bip(220); toast('Tecla sem função nesta tela');
+  };
+
+  // Teclado do PC para testar no navegador (setas, Enter, Esc, M)
+  addEventListener('keydown', e => {
+    const map = { ArrowUp:'UP', ArrowDown:'DOWN', ArrowLeft:'LEFT', ArrowRight:'RIGHT', Enter:'SELECT', Escape:'BACK', Backspace:'BACK', m:'MENU', M:'MENU' };
+    const a = map[e.key]; if (a) { e.preventDefault(); window.fireTvKey(a); }
+  });
+
+  renderGrid(); fitStage(); pintarFoco();
+  if (load()) toast('Retomado de onde você parou');
+})();
+</script></body></html>
