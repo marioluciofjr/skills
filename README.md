@@ -60,6 +60,7 @@ Cada pasta é uma skill diferente. Para baixar os arquivos .ZIP de maneira separ
 * [flip-horizontal](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/flip-horizontal)
 * [extrair-imagens](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/extrair-imagens)
 * [app-to-firetv](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/app-to-firetv)
+* [leis-uxui](https://downgit.github.io/#/home?url=https://github.com/marioluciofjr/skills/tree/main/leis-uxui)
 
 ## Como adicionar uma skill deste repositório no Claude
 
